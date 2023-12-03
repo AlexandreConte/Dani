@@ -5,7 +5,7 @@ export interface AreaProps {
 
 export default function Area({ children, className }: AreaProps) {
     return (
-        <div className={`px-7 xl:px-0 w-full xl:w-[1200px] ${className ?? ''}`}>
+        <div className={`w-full xl:w-[1200px] ${className ?? ''}`}>
             {children}
         </div>
     )
