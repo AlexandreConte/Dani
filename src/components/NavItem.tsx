@@ -18,11 +18,11 @@ export default function NavItem(props: NavItemProps) {
         >
             <div className="flex items-center">
                 {props.icon ? (
-                    <div className="flex items-center gap-1 text-white">
+                    <div className="flex items-center justify-center gap-1 text-white">
                         <>
                             {React.cloneElement(props.icon,
                                 {
-                                    size: 20,
+                                    size: 18,
                                     color: "white",
                                 }
                             )}

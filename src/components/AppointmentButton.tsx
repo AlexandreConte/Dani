@@ -1,18 +1,27 @@
-import { IconBrandWhatsapp } from "@tabler/icons-react"
+import React from "react"
 
 interface ButtonProps {
     link: string
     children: any
+    image: any
     className?: string
 }
 
-export default function Button(props: ButtonProps) {
+export default function AppointmentButton({ link, children, className, image }: ButtonProps) {
     return (
-        <a href={props.link} className={`
-      bg-neutral-300 rounded-lg p-3 hover:bg-[#b1ccb3] focus:bg-[#a1caa3] hover:translate-y-2 transition-all duration-300
-      ${props.className ?? ""}
-      `}>
-            <span className="flex gap-1"><IconBrandWhatsapp /> {props.children}</span>
+        <a href={link} className={`
+            rounded-lg p-3 hover:-translate-y-1 transition-all duration-200
+            text-white font-extralight
+            ${className ?? ""
+            }`}>
+            <div className="flex items-center justify-center gap-2">
+                <span className="text-white">
+                    {React.cloneElement(image, {
+                        size: 25
+                    })}
+                </span>
+                {children}
+            </div>
         </a>
     )
 }

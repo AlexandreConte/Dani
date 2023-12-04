@@ -6,7 +6,7 @@ export type ProfileProps = {
 export default function Profile({ children }: ProfileProps) {
     return (
         <div
-            id="equipe"
+            id="sobre"
             className="
                 flex flex-col items-center gap-4 md:flex-row justify-center
             ">

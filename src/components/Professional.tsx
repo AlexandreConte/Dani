@@ -16,7 +16,7 @@ export default function Professional({ name, image, specialization, instaUrl }: 
             hover:bg-neutral-100
             transition-all duration-300`
         }>
-            <h2 className="">
+            <h2>
                 {image ? (
                     <Image src={image} alt={name} className="w-[200px] m-auto rounded-full border-2 border-[#C1A497]" />
                 ) : (

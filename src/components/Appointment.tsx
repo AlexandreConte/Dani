@@ -7,13 +7,11 @@ import FullWidth from "./common/FullWidth"
 import backgroudImage from "public/backgrounds/dani-bg.jpg"
 
 export interface AppointmentProps {
-    buttonTitle: string
-    buttonLink: string
-    imagePath?: string
+    children: any
     className?: string
 }
 
-export default function Appointment({ buttonTitle, buttonLink, className }: AppointmentProps) {
+export default function Appointment({ children, className }: AppointmentProps) {
     return (
         <div className={`
             flex justify-center items-center
@@ -24,6 +22,7 @@ export default function Appointment({ buttonTitle, buttonLink, className }: Appo
             bg-[#bebebe54]
             h-screen
             max-[410px]:h-[550px]
+            ${className}
     `}>
             <Image
                 src={backgroudImage}
@@ -32,16 +31,12 @@ export default function Appointment({ buttonTitle, buttonLink, className }: Appo
             />
             <FullWidth className={`
                 flex justify-center items-center
-        `}>
+            `}>
                 <Area className="
                     flex flex-col justify-between items-center md:flex-row
                     py-10 gap-y-8 sm:py-48 sm:gap-y-0
             ">
-                    <Banner
-                        buttonTitle={buttonTitle}
-                        link={buttonLink}
-                        className={className}
-                    />
+                    {children}
                 </Area>
             </FullWidth>
         </div>

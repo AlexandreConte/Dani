@@ -14,6 +14,7 @@ import { IconDental, IconHome, IconMapPinFilled, IconPhone } from "@tabler/icons
 import Profile from "./Profile";
 import WithBackground from "./common/WithBackground";
 import Professional, { ProfessionalProps } from "./Professional";
+import Banner from "./AppointmentBanner";
 
 // NAVBAR DATA
 const navbarItens: IconsAndDescriptionsNavbarItems[] = [
@@ -47,29 +48,33 @@ const navbarItens: IconsAndDescriptionsNavbarItems[] = [
 const profile: ProfessionalProps = { name: 'Dra. Daniela Aline Conte', specialization: 'Especialista e mestre em Prótese e Reabilitação Oral.', image: profileImage, instaUrl: "https://www.instagram.com/dradaniconte/" }
 
 // MAIN PAGE
-export default function MainPage() {
+export default function HomePage() {
     return (
         <Page>
             <Header
                 logoImage={logoImage}
                 navbarItens={navbarItens}
             />
-            <Appointment
-                buttonTitle="Agendar Avaliação"
-                buttonLink="https://wa.me/5548999299977"
-                className="bg-[#67c3c6b2] p-6 rounded-lg"
-            />
+            <Appointment>
+                <Banner
+                    buttonTitle={"Agendar Avaliação"}
+                    link={"https://wa.me/5548999299977"}
+                    className={"bg-[#67c3c6b2] p-6 rounded-lg"}
+                />
+            </Appointment>
             <WithBackground>
-                <Profile>
-                    <Professional
-                        name={profile.name}
-                        image={profile.image}
-                        specialization={profile.specialization}
-                        instaUrl={profile.instaUrl}
-                    />
-                </Profile>
-                <About />
-                <Map />
+                <main>
+                    <Profile>
+                        <Professional
+                            name={profile.name}
+                            image={profile.image}
+                            specialization={profile.specialization}
+                            instaUrl={profile.instaUrl}
+                        />
+                    </Profile>
+                    <About />
+                    <Map />
+                </main>
                 <ScrollTop />
             </WithBackground>
         </Page>

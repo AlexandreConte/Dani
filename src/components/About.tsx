@@ -4,8 +4,10 @@ interface AboutProps {
 
 export default function About({ className }: AboutProps) {
     return (
-        <main id="sobre" className={`${className ?? ''}`}>
-            Sobre
-        </main>
+        <div id="" className={`${className ?? ''}`}>
+            <div>
+
+            </div>
+        </div>
     )
 }

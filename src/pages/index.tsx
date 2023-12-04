@@ -1,14 +1,14 @@
-import MainPage from '@/components/MainPage'
+import HomePage from '@/components/HomePage'
 import Head from 'next/head'
 
 export default function Home() {
     return (
         <>
             <Head>
-                <title>Ory Odontologia</title>
-                <meta name="description" content="Ory Odontologia | Dentista Oka Florianópolis" />
+                <title>Dra. Daniela Conte | Dentista especializada em Prótese</title>
+                <meta name="description" content="Especialista em prótese | Dentista Oka Florianópolis" />
             </Head>
-            <MainPage />
+            <HomePage />
         </>
     )
 }
