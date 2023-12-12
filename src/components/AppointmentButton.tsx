@@ -9,18 +9,21 @@ interface ButtonProps {
 
 export default function AppointmentButton({ link, children, className, image }: ButtonProps) {
     return (
-        <a href={link} className={`
-                rounded-lg p-3 hover:-translate-y-1 transition-all duration-200
-                text-white font-extralight
-                ${className ?? ""
-            }`}>
-            <div className="flex items-center justify-center gap-2">
-                <span className="text-green-800">
+        <a className={`
+            rounded-lg p-3
+            font-extralight
+            ${className ?? ""}
+            `}
+            href={link}
+            id="contatos"
+        >
+            <div className="flex items-center justify-center gap-2 hover:-translate-y-1 transition-all duration-200">
+                <span className="text-black">
                     {React.cloneElement(image, {
                         size: 25
                     })}
                 </span>
-                <p className="text-green-800 font-normal">{children}</p>
+                <p className="text-black font-normal underline">{children}</p>
             </div>
         </a>
     )

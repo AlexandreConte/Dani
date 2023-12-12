@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "AustraliaScript";
+    src:
+        local("Australia Script"),
+        url("/fonts/AustraliaScript.otf") format("opentype"),
+        url("/fonts/AustraliaScript.ttf") format("truetype");
+}
+
+.logo {
+    font-family: "AustraliaScript";
+    color: white;
+}

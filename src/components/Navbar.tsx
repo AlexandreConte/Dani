@@ -14,7 +14,7 @@ export interface IconsAndDescriptionsNavbarItems {
 export default function Navbar({ navbarItens }: NavProps) {
     return (
         <nav>
-            <ul className="flex justify-between gap-5 list-none">
+            <ul className="flex justify-between list-none">
                 {navbarItens.map((it, i) => (
                     <NavItem
                         key={`${it.description}-${i}`}

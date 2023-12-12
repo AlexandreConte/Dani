@@ -16,7 +16,7 @@ export default function NavItem({ children, link, alwaysAvailable, icon, classNa
                     border-b-2 border-transparent
                     hover:border-white transition-colors
                     ${alwaysAvailable ? "" : "hidden"}
-                    lg:flex
+                    lg:flex lg:mx-1
                     ${className}
                 `}
             >
