@@ -3,11 +3,12 @@ import Image from "next/image"
 import Area from "./common/Area"
 import FullWidth from "./common/FullWidth"
 import { StaticImport } from "next/dist/shared/lib/get-img-props"
+import { ReactNode } from "react"
 
 export interface AppointmentProps {
     backgroundImage: StaticImport
     altImage: string
-    children: any
+    children: ReactNode
     className?: string
 }
 
@@ -27,7 +28,7 @@ export default function Appointment({ children, className, backgroundImage, altI
             <Image
                 src={backgroundImage}
                 alt={altImage}
-                className="fixed -z-20 xl:translate-y-[125px] w-screen h-fit"
+                className="fixed -z-20 xl:translate-y-[125px] w-full h-fit"
             />
             <FullWidth className={`
                 flex justify-center items-center
