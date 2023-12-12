@@ -1,22 +1,19 @@
 import Link from "next/link"
-import Image from "next/image"
+import { DetailedHTMLProps, ImgHTMLAttributes } from "react"
 
 interface LogoProps {
-    logoImage: any
-    width?: number
+    image: DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>
     className?: string
-    altLogo?: string
 }
 
-export default function Logo({ logoImage, width, className }: LogoProps) {
+export default function Logo({ image, className }: LogoProps) {
     return (
-        <Link className={`flex flex-col items-center`} href="/" id="logo">
+        <Link className={`flex flex-col items-center ${className}`}
+            href="/"
+            id="logo"
+        >
             <h1>
-                <Image
-                    src={logoImage}
-                    alt={`Logo ${logoImage}`}
-                    className={className ?? 'w-[200px] sm:w-[200px] md:w-[300px] lg:w-[400px] xl:w-[600px]'}
-                />
+                <>{image}</>
             </h1>
         </Link>
     )

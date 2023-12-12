@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <Head>
                 <title>Dra. Daniela Conte | Dentista especializada em Prótese</title>
-                <meta name="description" content="Especialista em prótese | Dentista Oka Florianópolis" />
+                <meta name="description" content="Doutora Daniela Especialista em prótese | Dentista Oka Florianópolis" />
             </Head>
             <HomePage />
         </>

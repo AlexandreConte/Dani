@@ -13,3 +13,13 @@ html {
   font-family: 'Inter', 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: 'Australia Script';
+  src: url(/public/fonts/Australia\ Script.otf);
+}
+
+@font-face {
+  font-family: 'Australia Script';
+  src: url(/public/fonts/Australia\ Script.ttf);
+}

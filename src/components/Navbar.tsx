@@ -13,17 +13,19 @@ export interface IconsAndDescriptionsNavbarItems {
 
 export default function Navbar({ navbarItens }: NavProps) {
     return (
-        <nav className="flex justify-between gap-5">
-            {navbarItens.map((it, i) => (
-                <NavItem
-                    key={`${it.description}-${i}`}
-                    link={it.url}
-                    icon={it.image}
-                    alwaysAvailable={it.alwaysAvailable}
-                >
-                    {it.description}
-                </NavItem>)
-            )}
+        <nav>
+            <ul className="flex justify-between gap-5 list-none">
+                {navbarItens.map((it, i) => (
+                    <NavItem
+                        key={`${it.description}-${i}`}
+                        link={it.url}
+                        icon={it.image}
+                        alwaysAvailable={it.alwaysAvailable}
+                    >
+                        {it.description}
+                    </NavItem>)
+                )}
+            </ul>
         </nav>
     )
 }

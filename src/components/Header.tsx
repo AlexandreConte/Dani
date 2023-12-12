@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
-
 import Area from "./common/Area"
 import FullWidth from "./common/FullWidth"
 import Logo from "./common/Logo"
 import Nav, { IconsAndDescriptionsNavbarItems } from "./Navbar"
+import Image from "next/image"
+import { StaticImport } from "next/dist/shared/lib/get-img-props"
 
 interface HeaderProps {
-    logoImage: any
+    logoImage: StaticImport
     navbarItens: IconsAndDescriptionsNavbarItems[]
 }
 
@@ -40,8 +41,7 @@ export default function Header({ logoImage, navbarItens }: HeaderProps) {
     }, [scrollY])
 
     return (
-        <div>
-            <FullWidth className={`
+        <FullWidth className={`
                 bg-[#67c3c6]
                 flex justify-center items-center
                 fixed top-0 z-10
@@ -50,18 +50,16 @@ export default function Header({ logoImage, navbarItens }: HeaderProps) {
                 transition-transform duration-200
                 ${isHeaderVisibile ? "" : "-translate-y-[125px]"}
             `}>
-                <Area>
-                    <header className="flex items-center justify-between flex-wrap py-6 sm:py-10 mr-4">
-                        <Logo
-                            logoImage={logoImage}
-                            altLogo="Dra. Daniela Aline Conte especialista e mestre em prótese e reabilitação oral"
-                        />
-                        <Nav
-                            navbarItens={navbarItens}
-                        />
-                    </header>
-                </Area>
-            </FullWidth>
-        </div>
+            <Area>
+                <header className="flex items-center justify-between flex-wrap py-6 sm:py-10 mr-4">
+                    <Logo
+                        image={<Image className="w-60 md:w-96 lg:w-[500px] xl:w-[700px]" width={9000} src={logoImage} alt="Dra. Daniela Aline Conte especialista e mestre em prótese e reabilitação oral" />}
+                    />
+                    <Nav
+                        navbarItens={navbarItens}
+                    />
+                </header>
+            </Area>
+        </FullWidth>
     )
 }

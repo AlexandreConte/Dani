@@ -1,17 +1,17 @@
 //Components
 import Image from "next/image"
-import Banner from "./AppointmentBanner"
 import Area from "./common/Area"
 import FullWidth from "./common/FullWidth"
-// images
-import backgroudImage from "public/backgrounds/dani-bg.jpg"
+import { StaticImport } from "next/dist/shared/lib/get-img-props"
 
 export interface AppointmentProps {
+    backgroundImage: StaticImport
+    altImage: string
     children: any
     className?: string
 }
 
-export default function Appointment({ children, className }: AppointmentProps) {
+export default function Appointment({ children, className, backgroundImage, altImage }: AppointmentProps) {
     return (
         <div className={`
             flex justify-center items-center
@@ -23,17 +23,17 @@ export default function Appointment({ children, className }: AppointmentProps) {
             h-screen
             max-[410px]:h-[550px]
             ${className}
-    `}>
+        `}>
             <Image
-                src={backgroudImage}
-                alt="Dra. Daniela Aline Conte trabalhando na sua clínica odontológica em Florianópolis"
+                src={backgroundImage}
+                alt={altImage}
                 className="fixed -z-20 xl:translate-y-[125px] w-screen h-fit"
             />
             <FullWidth className={`
                 flex justify-center items-center
             `}>
                 <Area className="
-                    flex flex-col justify-between items-center md:flex-row
+                    flex flex-col justify-center items-center md:flex-row md:justify-start md:ml-8
                     py-10 gap-y-8 sm:py-48 sm:gap-y-0
             ">
                     {children}
