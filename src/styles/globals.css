@@ -12,4 +12,5 @@ body {
 html {
   font-family: 'Inter', 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

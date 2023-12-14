@@ -1,16 +1,17 @@
+// REACT HOOKS
 import { useEffect, useState } from "react"
+
+// COMPONENTS
 import Area from "./common/Area"
 import FullWidth from "./common/FullWidth"
 import Logo from "./common/Logo"
 import Nav, { IconsAndDescriptionsNavbarItems } from "./Navbar"
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
 
 interface HeaderProps {
-    logoImage: StaticImport
     navbarItens: IconsAndDescriptionsNavbarItems[]
 }
 
-export default function Header({ logoImage, navbarItens }: HeaderProps) {
+export default function Header({ navbarItens }: HeaderProps) {
 
     const [scrollY, setScrollY] = useState(0)
     const [isHeaderVisibile, setIsHeaderVisible] = useState<boolean>(true)

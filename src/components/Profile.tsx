@@ -1,3 +1,5 @@
+import { Slide } from "react-awesome-reveal"
+
 // COMPONENTS
 export type ProfileProps = {
     children: any
@@ -5,12 +7,14 @@ export type ProfileProps = {
 
 export default function Profile({ children }: ProfileProps) {
     return (
-        <div
-            id="sobre"
-            className="
-                flex flex-col items-center gap-4 md:flex-row justify-center
-            ">
-            {children}
-        </div>
+        <Slide>
+            <div
+                id="sobre"
+                className="
+                    flex flex-col items-center gap-4 md:flex-row justify-center
+                ">
+                {children}
+            </div>
+        </Slide>
     )
 }

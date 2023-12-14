@@ -40,7 +40,7 @@ export default function Appointment({ children, className, backgroundImage, altI
                 src={backgroundImage}
                 alt={altImage}
                 className={`fixed -z-20 object-center w-full h-auto -translate-y-`}
-                style={{ transform: `translateY(${scrollOffset * .8}px)` }}
+                style={{ transform: `translateY(${scrollOffset * .7}px)` }}
             />
             <FullWidth className={`
                 flex justify-center items-center
