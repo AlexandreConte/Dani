@@ -5,7 +5,6 @@ import Head from 'next/head'
 import { IconDental, IconHome, IconMapPinFilled, IconPhone } from '@tabler/icons-react'
 
 // components
-import About from '@/components/About'
 import Appointment from '@/components/Appointment'
 import AppointmentBanner from '@/components/AppointmentBanner'
 import Header from '@/components/Header'
@@ -15,12 +14,12 @@ import Professional from '@/components/Professional'
 import Profile from '@/components/Profile'
 import Page from '@/components/common/Page'
 import WithBackground from '@/components/common/WithBackground'
+import ScrollTop from '@/components/ArrowUp'
+import Clinic from '@/components/Clinic'
 
 // images
-import logoImage from "public/logo.webp"
-import profileImage from "public/perfil.avif"
-import backgroundImage from "public/backgrounds/dani-bg.avif"
-import ScrollTop from '@/components/ArrowUp'
+import profileImage from "public/perfil.jpg"
+import backgroundImage from "public/backgrounds/dani-bg.jpg"
 
 export default function Home() {
     return (
@@ -29,7 +28,6 @@ export default function Home() {
                 <title>Dra. Daniela Conte | Dentista especializada em Prótese</title>
             </Head>
             <Header
-                logoImage={logoImage}
                 navbarItens={navbarItens}
             />
             <Appointment
@@ -47,7 +45,7 @@ export default function Home() {
                             instaUrl={"https://www.instagram.com/dradaniconte/"}
                         />
                     </Profile>
-                    <About />
+                    <Clinic />
                     <AppointmentBanner
                         h2="Dentista Especialista e Mestre em Prótese e Reabilitação Oral"
                         button={"Agende a sua avaliação"}

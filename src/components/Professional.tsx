@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { IconBrandInstagram, IconUserCircle } from "@tabler/icons-react";
+import { Slide } from "react-awesome-reveal";
 
 export interface ProfessionalProps {
     name: string
@@ -11,10 +12,10 @@ export interface ProfessionalProps {
 export default function Professional({ name, image, specialization, instaUrl }: ProfessionalProps) {
     return (
         <div className={`
-            lg:w-[350px] w-auto
-            bg-neutral-200 m-2 rounded-xl py-4
-            hover:bg-neutral-100
-            transition-all duration-300`
+                lg:w-[350px] w-auto
+                bg-neutral-200 m-2 rounded-xl py-4
+                hover:bg-neutral-100
+                transition-all duration-300`
         }>
             <h2>
                 {image ? (
