@@ -5,6 +5,7 @@ export default function Document() {
         <Html lang="pt-br">
             <Head>
                 <meta name="description" content="Doutora Daniela Especialista em prótese | Dentista Oka Florianópolis" />
+                <link rel="icon" href="favicon.svg" type="image/svg" />
             </Head>
             <body>
                 <Main />
