@@ -20,7 +20,7 @@ export default function AppointmentBanner({ h2, button, link, className }: Banne
         <Slide direction="right">
             <div className={`flex flex-col items-center justify-center gap-4 py-36 ${className ?? ""}`}>
                 <h2 className={`${styles.logo} text-4xl text-center`}>Dra Daniela Conte</h2>
-                <h2 className="text-white font-extralight hidden md:flex justify-center items-center">{h2}</h2>
+                <h2 className="text-white font-extralight hidden md:flex justify-center items-center text-xl">{h2}</h2>
                 <Button
                     link={link}
                     image={<IconBrandWhatsapp stroke={1} />}
