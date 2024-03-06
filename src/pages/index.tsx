@@ -11,7 +11,6 @@ import { IconsAndDescriptionsNavbarItems } from '@/components/Navbar'
 import Page from '@/components/common/Page'
 
 // images
-
 import backgroundImage from "public/backgrounds/dani-bg.jpg"
 import Main from '@/components/Main'
 
