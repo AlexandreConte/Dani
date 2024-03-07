@@ -42,7 +42,7 @@ export default function Clinic({ }: ClinicProps) {
       <Slide direction="left" className="flex items-center">
         <Image
           className="max-h-[80vh] w-fit"
-          src={backgroundImage2}
+          src={backgroundImage}
           alt="Consultório da Dentista em Florianópolis"
         />
       </Slide>
