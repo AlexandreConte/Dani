@@ -7,33 +7,45 @@ import backgroundImage2 from "public/backgrounds/consultorio-bg.jpg"
 
 // Next Components
 import Image from "next/image"
-import Area from "./common/Area"
-
 
 interface ClinicProps {
-    className?: string
+  className?: string
 }
 
 export default function Clinic({ }: ClinicProps) {
-    return (
-        <Area className="flex justify-between items-center pt-32 w-full mx-auto flex-col lg:flex-row">
-            <Slide direction="left" className={`flex justify-between items-center`}>
-                <Image
-                    className="max-h-screen w-fit"
-                    src={backgroundImage}
-                    alt="Dentista Sorridente sentada em seu consultório com uma agenda na mesa"
-                />
-            </Slide>
-            <Slide direction="left">
-                <h1 className="flex justify-center items-center mx-4 text-center max-w-xs text-white text-2xl py-10 font-extralight">Dentista Especialista e Mestre em Prótese e Reabilitação Oral em Campeche - Florianópolis, Santa Catarina</h1>
-            </Slide>
-            <Slide direction="left">
-                <Image
-                    className="max-h-screen w-fit"
-                    src={backgroundImage2}
-                    alt="Consultório da Dentista em Florianópolis"
-                />
-            </Slide>
-        </Area>
-    )
+  return (
+    <div className="
+      flex justify-evenly items-center flex-col lg:flex-row
+      pt-32 mx-auto 
+      w-full max-w-[1440px]
+    ">
+      <Slide direction="left" className="flex items-center">
+        <Image
+          className="max-h-[80vh] w-full"
+          src={backgroundImage}
+          alt="Dentista Sorridente sentada em seu consultório com uma agenda na mesa"
+        />
+      </Slide>
+      <Slide direction="left" className="flex items-center">
+        <h1 className="
+            flex justify-center items-center
+            mx-4 py-10
+            text-center
+            text-white
+            max-w-[320px]
+            text-2xl font-extralight
+            md:text-3xl
+          ">
+          Dentista Especialista e Mestre em Prótese e Reabilitação Oral em Campeche - Florianópolis, Santa Catarina
+        </h1>
+      </Slide>
+      <Slide direction="left" className="flex items-center">
+        <Image
+          className="max-h-[80vh] w-fit"
+          src={backgroundImage2}
+          alt="Consultório da Dentista em Florianópolis"
+        />
+      </Slide>
+    </div>
+  )
 }

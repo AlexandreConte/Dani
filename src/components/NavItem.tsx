@@ -19,7 +19,8 @@ export default function NavItem({ children, link, alwaysAvailable, icon, classNa
         ${alwaysAvailable ? "" : "hidden"}
         lg:flex lg:mx-1
         ${className}
-      `}>
+      `}
+      >
         <div className="flex items-center justify-center">
           {icon ? (
             <div className="flex items-center justify-center gap-1 text-white">
