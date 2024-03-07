@@ -1,12 +1,12 @@
 export interface AreaProps {
-    children: any
+    children?: any
     className?: string
 }
 
 export default function Area({ children, className }: AreaProps) {
     return (
         <div className={`w-full xl:w-[1200px] ${className ?? ''}`}>
-            {children}
+            {children ?? null}
         </div>
     )
 }

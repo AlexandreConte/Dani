@@ -9,7 +9,6 @@ export default function Profile({ children }: ProfileProps) {
     return (
         <Slide>
             <div
-                id="sobre"
                 className="
                     flex flex-col items-center gap-4 md:flex-row justify-center
                 ">

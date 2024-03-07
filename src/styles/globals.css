@@ -4,8 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #67C3C6;
+body,
+.bg {
+  @apply bg-[#67C3C6];
 }
 
 html {

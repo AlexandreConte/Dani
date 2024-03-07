@@ -2,32 +2,39 @@
 import { IconBrandWhatsapp } from "@tabler/icons-react"
 
 // components
-import Button from "./AppointmentButton"
+import AppointmentButton from "./AppointmentButton"
 
 // styles
 import styles from "@/styles/Logo.module.css"
 import { Slide } from "react-awesome-reveal"
 
 interface BannerProps {
-    h2: string
+    h1: string
     button: string
     link: string
     className?: string
 }
 
-export default function AppointmentBanner({ h2, button, link, className }: BannerProps) {
+export default function AppointmentBanner({ h1, button, link, className }: BannerProps) {
     return (
-        <Slide direction="right">
-            <div className={`flex flex-col items-center justify-center gap-4 py-36 ${className ?? ""}`}>
-                <h2 className={`${styles.logo} text-4xl text-center`}>Dra Daniela Conte</h2>
-                <h2 className="text-white font-extralight hidden md:flex justify-center items-center text-xl">{h2}</h2>
-                <Button
-                    link={link}
-                    image={<IconBrandWhatsapp stroke={1} />}
-                >
-                    {button}
-                </Button>
-            </div>
-        </Slide>
+        <div className="py-24">
+            <span className="text-center flex items-center flex-col text-2xl text-white mb-8">Contato</span>
+            <Slide direction="right">
+                <div className={`flex flex-col items-center justify-center gap-4 ${className ?? ""}`}>
+                    <h2 className={`${styles.logo} text-4xl text-center`}>Dra Daniela Conte</h2>
+                    <h1 className="
+                    text-white font-extralight text-xl
+                    flex justify-center items-center 
+                    text-center
+                    ">{h1}</h1>
+                    <AppointmentButton
+                        link={link}
+                        image={<IconBrandWhatsapp />}
+                    >
+                        {button}
+                    </AppointmentButton>
+                </div>
+            </Slide>
+        </div>
     )
 }
