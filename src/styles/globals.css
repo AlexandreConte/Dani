@@ -6,11 +6,23 @@
 
 body,
 .bg {
-  @apply bg-[#67C3C6];
+  @apply bg-[#328185];
 }
 
 html {
   font-family: 'Inter', 'Poppins', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+.bg-wTransparency {
+  @apply bg-[rgba(50,129,133,0.8)];
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-col-center {
+  @apply flex flex-col justify-center items-center;
 }
