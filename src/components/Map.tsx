@@ -9,7 +9,7 @@ interface MapsProps {
 export default function Map({ iframeSrc, adressLine, gMapsHref }: MapsProps) {
     return (
         <div>
-            <span className="text-center w-full text-white flex flex-col items-center text-2xl">Endereço</span>
+            <span className="text-center w-full text-white flex flex-col items-center text-2xl font-semibold">Endereço</span>
             <Slide duration={1000}>
                 <div id="endereco" className="mt-8 flex flex-col justify-center items-center">
                     <iframe src={iframeSrc} width="300" height="350" loading="lazy"></iframe>

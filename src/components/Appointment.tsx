@@ -1,16 +1,11 @@
 //Components
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
 import Image from "next/image"
-import { ReactNode, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
-export interface AppointmentProps {
-    backgroundImage: StaticImport
-    altImage: string
-    children?: ReactNode
-    className?: string
-}
+// Image
+import backgroundImage from "public/backgrounds/dani-bg.jpg"
 
-export default function Appointment({ className, backgroundImage, altImage }: AppointmentProps) {
+export default function Appointment() {
 
     const [scrollOffset, setScrollOffset] = useState(0);
 
@@ -26,18 +21,16 @@ export default function Appointment({ className, backgroundImage, altImage }: Ap
         };
     }, []);
 
-
     return (
         <div className={`
-            flex justify-center items-center
+            flex-center
             bg-[#bebebe54] bg-cover w-full h-auto min-h-[30vh] lg:h-screen md:min-h-[50vh]
             z-20 
             shadow-2xl
-            ${className}
         `}>
             <Image
                 src={backgroundImage}
-                alt={altImage}
+                alt="Dra. Daniela Aline Conte trabalhando na sua clínica odontológica em Florianópolis"
                 className={`fixed -z-20 object-center w-full h-auto`}
                 style={{ transform: `translateY(${scrollOffset * .4}px)` }}
             />

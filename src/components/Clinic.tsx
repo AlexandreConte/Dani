@@ -18,7 +18,7 @@ interface ClinicProps {
 export default function Clinic({ }: ClinicProps) {
   return (
     <div className="flex flex-col items-center mt-14">
-      <span className="text-white text-2xl mb-10">A clínica</span>
+      <span className="text-white text-2xl mb-10 font-semibold">A clínica</span>
       <AreaWithMarginX className="
       flex justify-evenly items-center flex-col lg:flex-row
       w-full max-w-[1440px]

@@ -1,18 +1,25 @@
-import { Slide } from "react-awesome-reveal"
+//  Components
+import Professional from "./Professional";
 
-// COMPONENTS
-export type ProfileProps = {
-    children: any
-}
+// Lib Animation
+import { Slide } from "react-awesome-reveal";
 
-export default function Profile({ children }: ProfileProps) {
+// Images
+import profileImage from "public/perfil.jpg";
+
+export default function Profile() {
     return (
         <Slide>
             <div
                 className="
-                    flex flex-col items-center gap-4 md:flex-row justify-center
+                    flex-col-center gap-4 md:flex-row
                 ">
-                {children}
+                <Professional
+                    name={"Dra. Daniela Aline Conte"}
+                    image={profileImage}
+                    specialization={"Especialista e mestre em Prótese e Reabilitação Oral."}
+                    instaUrl={"https://www.instagram.com/dradaniconte/"}
+                />
             </div>
         </Slide>
     )

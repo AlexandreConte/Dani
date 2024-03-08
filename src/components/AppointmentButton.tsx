@@ -1,31 +1,29 @@
-import { cloneElement } from "react"
+import { IconBrandWhatsapp } from "@tabler/icons-react"
 
 interface AppointmentButtonProps {
-    link: string
-    children: any
-    image: any
     className?: string
 }
 
-export default function AppointmentButton({ link, children, className, image }: AppointmentButtonProps) {
+export default function AppointmentButton({ className }: AppointmentButtonProps) {
     return (
         <a className={`
-            rounded-lg p-3
+            flex-center
             ${className ?? ""}
             `}
-            href={link}
+            href="https://wa.me/5548999299977"
+            target="_blank"
             id="contatos"
         >
             <div className="
-                flex items-center justify-center 
-                gap-2 
+                flex-center gap-2
                 text-white
-                hover:-translate-y-1 transition-all duration-200 hover:text-green-900
+                w-full
+                hover:-translate-y-1 transition-all duration-200
             ">
-                <span className="text-white">
-                    {cloneElement(image, { strokeWidth: 1, size: 30 })}
+                <span className="flex-center text-center text-white">
+                    <IconBrandWhatsapp strokeWidth={1} color="#fff" size={30} />
                 </span>
-                <span className="font-normal underline">{children}</span>
+                <span className="flex-center text-center font-normal hover:underline">Conversar com a especialista</span>
             </div>
         </a>
     )

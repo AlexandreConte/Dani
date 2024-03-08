@@ -1,6 +1,3 @@
-// tabler icons
-import { IconBrandWhatsapp } from "@tabler/icons-react"
-
 // components
 import AppointmentButton from "./AppointmentButton"
 
@@ -9,30 +6,24 @@ import styles from "@/styles/Logo.module.css"
 import { Slide } from "react-awesome-reveal"
 
 interface BannerProps {
-    h1: string
-    button: string
-    link: string
     className?: string
 }
 
-export default function AppointmentBanner({ h1, button, link, className }: BannerProps) {
+export default function AppointmentBanner({ className }: BannerProps) {
     return (
-        <div className="py-24">
-            <span className="text-center flex items-center flex-col text-2xl text-white mb-8">Contato</span>
+        <div className="flex-col-center py-24 px-2">
+            <span className="text-center flex-col-center text-2xl text-white mb-8 font-semibold">Contato</span>
             <Slide direction="right">
-                <div className={`flex flex-col items-center justify-center gap-4 ${className ?? ""}`}>
+                <div className={`flex-col-center gap-4 ${className ?? ""}`}>
                     <h2 className={`${styles.logo} text-4xl text-center`}>Dra Daniela Conte</h2>
                     <h1 className="
-                    text-white font-extralight text-xl
-                    flex justify-center items-center 
-                    text-center
-                    ">{h1}</h1>
-                    <AppointmentButton
-                        link={link}
-                        image={<IconBrandWhatsapp />}
-                    >
-                        {button}
-                    </AppointmentButton>
+                        text-white font-extralight text-xl
+                        flex-center
+                        text-center
+                    ">
+                        Dentista Especialista e Mestre em Prótese e Reabilitação Oral
+                    </h1>
+                    <AppointmentButton />
                 </div>
             </Slide>
         </div>
