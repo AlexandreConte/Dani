@@ -1,5 +1,5 @@
 interface FullWidthProps {
-    className: string
+    className?: string
     children?: any
 }
 

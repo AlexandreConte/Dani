@@ -1,4 +1,4 @@
-import Appointment from "./Appointment";
+import BackgroundImage from "./Appointment";
 import AppointmentBanner from "./AppointmentBanner";
 import Clinic from "./Clinic";
 import Map from "./Map";
@@ -9,9 +9,9 @@ import WithColorBackground from "./common/WithColorBackground";
 export default function Main() {
   return (
     <>
-      <Appointment />
+      <BackgroundImage />
       <WithColorBackground>
-        <main className="pt-32">
+        <main className="pt-14">
           <Profile />
           <Clinic />
           <AppointmentBanner />

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 // Image
 import backgroundImage from "public/backgrounds/dani-bg.jpg"
 
-export default function Appointment() {
+export default function BackgroundImage() {
 
     const [scrollOffset, setScrollOffset] = useState(0);
 
@@ -24,7 +24,8 @@ export default function Appointment() {
     return (
         <div className={`
             flex-center
-            bg-[#bebebe54] bg-cover w-full h-auto min-h-[30vh] lg:h-screen md:min-h-[50vh]
+            bg-[#bebebe54] bg-cover 
+            w-full min-h-[30vh] md:min-h-[50vh] lg:h-screen
             z-20 
             shadow-2xl
         `}>

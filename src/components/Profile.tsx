@@ -10,9 +10,8 @@ import profileImage from "public/perfil.jpg";
 export default function Profile() {
     return (
         <Slide>
-            <div
-                className="
-                    flex-col-center gap-4 md:flex-row
+            <div className="
+                    flex-col-center mx-10
                 ">
                 <Professional
                     name={"Dra. Daniela Aline Conte"}
