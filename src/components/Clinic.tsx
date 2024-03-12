@@ -2,8 +2,8 @@
 import { Slide } from "react-awesome-reveal"
 
 // IMAGES
-import backgroundImage from "public/backgrounds/dani-bg2.jpg"
-import backgroundImage2 from "public/backgrounds/consultorio-bg.jpeg"
+import backgroundImage from "public/backgrounds/dani-bg2.avif"
+import backgroundImage2 from "public/backgrounds/consultorio-bg.avif"
 
 // Next Components
 import Image from "next/image"

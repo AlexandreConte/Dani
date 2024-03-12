@@ -3,7 +3,7 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 
 // Image
-import backgroundImage from "public/backgrounds/dani-bg.jpg"
+import backgroundImage from "public/backgrounds/dani-bg.avif"
 
 export default function BackgroundImage() {
 

@@ -30,6 +30,7 @@ export default function Navbar({ className }: NavProps) {
         <NavItem
           icon={<IconMapPinFilled />}
           link="#endereco"
+          ariaLabel="Localização no Google Maps."
           className={`${visiblityForNavItem}`}
         >
           Endereço
@@ -38,6 +39,7 @@ export default function Navbar({ className }: NavProps) {
           icon={<IconPhone />}
           link="https://wa.me/5548999299977"
           target="_blank"
+          ariaLabel="Contato por WhatsApp."
           textHidden
         >
           Contato
@@ -54,15 +56,17 @@ interface NavItemProps {
   icon: any
   target?: "_blank"
   textHidden?: boolean
+  ariaLabel?: string
 }
 
-export function NavItem({ children, link, icon, target, textHidden, className }: NavItemProps) {
+export function NavItem({ children, link, icon, target, textHidden, className, ariaLabel }: NavItemProps) {
   const hidden = textHidden ? "hidden" : "flex" 
 
   return (
     <li>
-      <a
-        href={link}
+      <a href={link}
+        target={target ?? "_self"}
+        aria-label={ariaLabel ?? ""}
         className={`
           border-b-2 border-transparent
           hover:border-white transition-colors
@@ -71,7 +75,6 @@ export function NavItem({ children, link, icon, target, textHidden, className }:
           mx-3
           ${className ?? ""}
         `}
-        target={target ?? "_self"}
       >
         <div className="flex-center">
           <div className="flex-center gap-1.5 text-white">
