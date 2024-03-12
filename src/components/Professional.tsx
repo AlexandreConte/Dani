@@ -15,7 +15,7 @@ export default function Professional({ name, image, specialization, instaUrl }: 
             <span id="sobre" className="my-4 text-white text-center w-screen text-2xl font-semibold">Sobre</span>
             <div className={`
                     lg:w-[350px] w-auto
-                    bg-neutral-200 m-auto rounded-xl py-4
+                    bg-neutral-200 mx-4 rounded-xl py-4
                     hover:bg-neutral-100
                     transition-all duration-300`
             }>

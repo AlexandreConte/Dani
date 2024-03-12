@@ -11,7 +11,7 @@ export default function Profile() {
     return (
         <Slide>
             <div className="
-                    flex-col-center mx-10
+                    flex-col-center mx-auto
                 ">
                 <Professional
                     name={"Dra. Daniela Aline Conte"}

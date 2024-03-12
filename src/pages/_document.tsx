@@ -18,7 +18,7 @@ export default function Document() {
                     `
                 }} />
             </Head>
-            <body>
+            <body className='min-w-full bg'>
                 <Main />
                 <NextScript />
             </body>

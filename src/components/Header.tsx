@@ -4,8 +4,8 @@ import { useEffect, useState } from "react"
 // COMPONENTS
 import FullWidth from "./common/FullWidth"
 import Logo from "./common/Logo"
-import Nav from "./Navbar"
-import AreaWithMarginX from "./common/AreaWithMarginX"
+import Navbar from "./Navbar"
+import Area from "./common/Area"
 
 export default function Header() {
 
@@ -49,14 +49,21 @@ export default function Header() {
         shadow-lg
       ${isHeaderVisibile ? "" : "-translate-y-[125px]"}
     `}>
-        <AreaWithMarginX>
-          <header className="flex items-center justify-between flex-wrap py-6 sm:py-10">
+        <Area>
+          <header className="
+            w-full 
+            flex items-center justify-center flex-wrap
+            min-[320px]:justify-between
+            py-6 mx-auto
+            sm:py-10
+            min-[375px]:px-2
+          ">
             <Logo />
-            <Nav />
+            <Navbar className="hidden min-[320px]:flex" />
           </header>
-        </AreaWithMarginX>
+        </Area>
       </FullWidth>
-      <div className="w-full bg h-[125px]"></div>
+      <div className="w-full h-[125px]"></div>
     </>
   )
 }

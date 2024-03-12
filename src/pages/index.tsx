@@ -6,7 +6,7 @@ import Header from '@/components/Header'
 import Page from '@/components/common/Page'
 
 // images
-import Main from '@/components/Main'
+import MainContent from '@/components/MainContent'
 import ScrollTop from '@/components/ArrowUp'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
                 <title>Dra. Daniela Conte | Dentista especializada em Prótese</title>
             </Head>
             <Header />
-            <Main />
+            <MainContent />
             <ScrollTop />
         </Page>
     )

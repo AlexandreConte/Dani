@@ -4,7 +4,7 @@ interface PageProps {
 
 export default function Page({ children }: PageProps) {
     return (
-        <div>
+        <div className="w-screen">
             {children}
         </div>
     )

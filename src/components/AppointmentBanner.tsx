@@ -11,7 +11,7 @@ interface BannerProps {
 
 export default function AppointmentBanner({ className }: BannerProps) {
     return (
-        <div className="flex-col-center py-24 px-2">
+        <div className="flex-col-center py-24 mx-2">
             <span className="text-center flex-col-center text-2xl text-white mb-8 font-semibold">Contato</span>
             <Slide direction="right">
                 <div className={`flex-col-center gap-4 ${className ?? ""}`}>

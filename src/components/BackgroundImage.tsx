@@ -26,7 +26,6 @@ export default function BackgroundImage() {
             flex-center
             bg-[#bebebe54] bg-cover 
             w-full min-h-[30vh] md:min-h-[50vh] lg:h-screen
-            z-20 
             shadow-2xl
         `}>
             <Image
