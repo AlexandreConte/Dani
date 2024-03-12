@@ -5,7 +5,7 @@ import Professional from "./Professional";
 import { Slide } from "react-awesome-reveal";
 
 // Images
-import profileImage from "public/perfil/perfil.avif";
+import profileImage from "public/perfil.jpg";
 
 export default function Profile() {
     return (
