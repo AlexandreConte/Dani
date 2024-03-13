@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function Document() {
     return (
@@ -8,7 +9,7 @@ export default function Document() {
                 <meta name="google-site-verification" content="jLf3yyNpt8ZT5I8sD2xF7zBgcEzUqH20ZqI7i7_G6pY" />
                 <link rel="icon" href="favicon.svg" type="image/svg" />
                 {/* Google tag (gtag.js) */}
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-12LD4PZ140"></script>
+                <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
                 <script dangerouslySetInnerHTML={{
                     __html: `
                     window.dataLayer = window.dataLayer || [];
