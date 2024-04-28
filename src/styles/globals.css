@@ -26,3 +26,24 @@ html {
 .flex-col-center {
   @apply flex-center flex-col;
 }
+
+@keyframes slide-right {
+  from {
+    margin-left: -1920px;
+  } 
+  to {
+    margin-left: 0;
+  }
+}
+
+.slide-right {
+  animation: slide-right .6s ease;
+}
+
+.pause {
+  animation-play-state: paused;
+}
+
+.running {
+  animation-play-state: running;
+}

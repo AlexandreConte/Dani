@@ -1,15 +1,15 @@
 import Image from "next/image";
 import { IconBrandInstagram } from "@tabler/icons-react";
-import AreaWithMarginX from "./common/AreaWithMarginX";
+import AreaWithMarginX from "../../common/AreaWithMarginX";
 
-export interface ProfessionalProps {
+export interface ProfessionalCardProps {
     name: string
     image: any
     specialization: string
     instaUrl: string
 }
 
-export default function Professional({ name, image, specialization, instaUrl }: ProfessionalProps) {
+export default function ProfessionalCard({ name, image, specialization, instaUrl }: ProfessionalCardProps) {
     return (
         <AreaWithMarginX className="flex-col-center">
             <span id="sobre" className="my-4 text-white text-center w-screen text-2xl font-semibold">Sobre</span>

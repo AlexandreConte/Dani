@@ -1,11 +1,11 @@
 interface PageProps {
-    children: any
+  children: any
 }
 
 export default function Page({ children }: PageProps) {
-    return (
-        <div className="w-full mx-auto">
-            {children}
-        </div>
-    )
+  return (
+    <div className="w-full mx-auto">
+      {children}
+    </div>
+  )
 }

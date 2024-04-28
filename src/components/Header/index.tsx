@@ -1,11 +1,8 @@
-// REACT HOOKS
 import { useEffect, useState } from "react"
-
-// COMPONENTS
-import FullWidth from "./common/FullWidth"
-import Logo from "./common/Logo"
+import FullWidth from "../common/FullWidth"
+import Logo from "../common/Logo"
 import Navbar from "./Navbar"
-import Area from "./common/Area"
+import Area from "../common/Area"
 
 export default function Header() {
 
@@ -21,29 +18,25 @@ export default function Header() {
         return
       }
 
-      if (currentScroll < scrollY) {
-        setIsHeaderVisible(true)
-      } else {
-        setIsHeaderVisible(false)
-      }
+      currentScroll < scrollY ?
+        setIsHeaderVisible(true) : setIsHeaderVisible(false);
 
       setScrollY(currentScroll)
     }
 
     window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
+    return () => window.removeEventListener("scroll", handleScroll)
+
   }, [scrollY])
 
   return (
     <>
       <FullWidth className={`
         bg-wTransparency
+        w-full
         flex-center
         fixed top-0 left-0 z-50
         h-[125px]
-        border-b border-white
         transition-transform duration-500
         backdrop-blur-lg
         shadow-lg
