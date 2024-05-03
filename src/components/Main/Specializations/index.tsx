@@ -1,5 +1,5 @@
 import SpecialItem from "./SpecializationItem";
-import Slider from "../common/Slider";
+import Slider from "../../common/Slider";
 
 const specializations = [
   "Prótese",
@@ -9,7 +9,7 @@ const specializations = [
 
 function renderSpecializations() {
   return (
-    <Slider cascade>
+    <Slider cascade direction="up">
       {specializations.map((it, index) => (
         <SpecialItem key={`${it}-${index}`}>{it}</SpecialItem>
       ))}

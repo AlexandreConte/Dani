@@ -7,7 +7,7 @@ import Image from "next/image"
 
 // Library
 import Slider from "@/components/common/Slider"
-import Specializations from "@/components/Specializations"
+import Specializations from "@/components/Main/Specializations"
 import Area from "@/components/common/Area"
 
 interface ClinicProps {
