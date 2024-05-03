@@ -25,14 +25,14 @@ export default function Clinic({ className }: ClinicProps) {
     ">
         <Slider direction="left" className="flex items-center">
           <Image
-            className="max-h-[80vh] w-full"
+            className="max-h-[80vh] w-full object-cover"
             src={backgroundImage}
             alt="Dentista sorrindo sentada em seu consultório com uma agenda na mesa."
           />
         </Slider>
         <Slider direction="right" className="flex justify-center items-center">
           <Image
-            className="max-h-[80vh] w-full"
+            className="max-h-[80vh] w-full object-cover"
             src={backgroundImage2}
             alt="Consultório da Dentista em Santa Catarina, Florianópolis - Campeche"
           />
