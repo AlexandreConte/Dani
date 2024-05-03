@@ -1,10 +1,9 @@
 // styles
 import styles from "@/styles/Logo.module.css"
-import { Slide } from "react-awesome-reveal"
 
 // Icons
 import { IconBrandWhatsapp } from "@tabler/icons-react"
-import animationDuration from "@/utils/constants/animation"
+import Slider from "@/components/common/Slider"
 
 interface ContactProps {
   className?: string
@@ -12,21 +11,21 @@ interface ContactProps {
 
 export default function Contact({ className }: ContactProps) {
   return (
-    <div className={`flex-col-center py-24 mx-2 ${className ?? ""}`}>
+    <div className={`flex-col-center py-12 mx-2 ${className ?? ""}`}>
       <span className="text-center flex-col-center text-2xl text-white mb-8 font-semibold">Contato</span>
-      <Slide direction="right" duration={animationDuration}>
+      <Slider direction="right">
         <div className={`flex-col-center gap-4 ${className ?? ""}`}>
           <h2 className={`${styles.logo} text-4xl text-center`}>Dra Daniela Conte</h2>
           <h1 className="
-                        text-white font-extralight text-xl
-                        flex-center
-                        text-center
-                    ">
+            text-white font-extralight text-xl
+            flex-center
+            text-center
+          ">
             Dentista Especialista e Mestre em Prótese e Reabilitação Oral
           </h1>
           <TalkButton />
         </div>
-      </Slide>
+      </Slider>
     </div>
   )
 }

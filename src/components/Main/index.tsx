@@ -6,8 +6,8 @@ import About from "./About";
 import WithColorBackground from "../common/WithColorBackground";
 import BackgroundImage from "./BackgroundImage";
 import FullWidth from "../common/FullWidth";
-import Specializations from "../Specializations";
 import Quote from "./Quote";
+import Specializations from "../Specializations";
 
 export default function MainContent() {
   return (

@@ -6,8 +6,6 @@ export interface NavProps {
 }
 
 export default function Navbar({ className }: NavProps) {
-  const visiblityForNavItem = "hidden md:flex"
-
   return (
     <nav className={`
       ${className ?? ""}
@@ -16,14 +14,14 @@ export default function Navbar({ className }: NavProps) {
         <NavItem
           icon={<IconHome />}
           link="#"
-          className={`${visiblityForNavItem}`}
+          className="hidden lg:flex"
         >
           Início
         </NavItem>
         <NavItem
           icon={<IconDental />}
           link="#sobre"
-          className={`${visiblityForNavItem}`}
+          className="hidden md:flex"
         >
           Sobre
         </NavItem>
@@ -31,7 +29,7 @@ export default function Navbar({ className }: NavProps) {
           icon={<IconMapPinFilled />}
           link="#endereco"
           ariaLabel="Localização no Google Maps."
-          className={`${visiblityForNavItem}`}
+          className="hidden md:flex"
         >
           Endereço
         </NavItem>

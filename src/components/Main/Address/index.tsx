@@ -1,6 +1,5 @@
-import { Slide } from "react-awesome-reveal"
 import Area from "../../common/Area"
-import animationDuration from "@/utils/constants/animation"
+import Slider from "@/components/common/Slider"
 
 interface AdressProps {
   iframeSrc: string
@@ -12,7 +11,7 @@ export default function Adress({ iframeSrc, adressLine, gMapsHref }: AdressProps
   return (
     <Area className="flex-col-center mx-auto">
       <span className="text-center w-full text-white flex flex-col items-center justify-center text-2xl font-semibold">Endereço</span>
-      <Slide duration={animationDuration}>
+      <Slider>
         <div id="endereco" className="mt-8 flex-col-center">
           <iframe src={iframeSrc} className="w-full h-[300px]" loading="lazy" title="Endereço"></iframe>
           <div className="pt-8 py-16 flex flex-col justify-center items-center px-4 text-center">
@@ -22,7 +21,7 @@ export default function Adress({ iframeSrc, adressLine, gMapsHref }: AdressProps
             </a>
           </div>
         </div>
-      </Slide>
+      </Slider>
     </Area>
   )
 }

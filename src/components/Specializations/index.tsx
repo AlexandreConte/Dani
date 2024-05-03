@@ -1,5 +1,5 @@
-import { Fragment } from "react";
 import SpecialItem from "./SpecializationItem";
+import Slider from "../common/Slider";
 
 const specializations = [
   "Prótese",
@@ -9,19 +9,20 @@ const specializations = [
 
 function renderSpecializations() {
   return (
-    <Fragment>
+    <Slider cascade>
       {specializations.map((it, index) => (
         <SpecialItem key={`${it}-${index}`}>{it}</SpecialItem>
       ))}
-    </Fragment>
+    </Slider>
   )
 }
 
 export default function Specializations() {
   return (
     <div className="
-      flex justify-center items-center
-      lg:translate-y-10 gap-4 w-full max-lg:mt-4
+      flex-center mt-12
+      min-w-[200px]
+      gap-4 max-lg:mt-4
     ">
       {renderSpecializations()}
     </div>
