@@ -20,7 +20,7 @@ function renderSpecializations() {
 export default function Specializations() {
   return (
     <div className="
-      flex-center mt-12
+      flex-center mt-12 flex-wrap
       min-w-[200px]
       gap-4 max-lg:mt-4
     ">
