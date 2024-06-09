@@ -1,40 +1,45 @@
-import { cloneElement } from "react"
+import { ElementType } from "react"
 
 interface NavItemProps {
   children: any
   link: string
   className?: string
-  icon: any
+  icon: ElementType
   target?: "_blank"
   textHidden?: boolean
   ariaLabel?: string
 }
 
-export function NavItem({ children, link, icon, target, textHidden, className, ariaLabel }: NavItemProps) {
-  const hidden = textHidden ? "hidden" : "flex"
+export function NavItem(props: NavItemProps) {
+  const hidden = props.textHidden ? "hidden" : "flex"
 
   return (
-    <li>
-      <a href={link}
-        target={target ?? "_self"}
-        aria-label={ariaLabel ?? ""}
+    <li className="sm:text-lg lg:text-xl">
+      <a href={props.link}
+        target={props.target ?? "_self"}
+        aria-label={props.ariaLabel ?? ""}
         className={`
           border-b-2 border-transparent
           hover:border-white transition-colors
           flex
           lg:mx-1
-          mx-3
-          ${className ?? ""}
+          sm:mx-3
+          ${props.className ?? ""}
         `}
       >
         <div className="flex-center">
           <div className="flex-center gap-1.5 text-white">
-            <span>{cloneElement(icon, { size: 18, color: "white" })}</span>
+            <span>
+              <props.icon className="
+                w-[18px]
+                sm:w-[20px]
+              " />
+            </span>
             <span className={`
               min-[425px]:flex
               ${hidden}
             `}>
-              {children}
+              {props.children}
             </span>
           </div>
         </div>

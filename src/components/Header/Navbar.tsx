@@ -10,23 +10,23 @@ export default function Navbar({ className }: NavProps) {
     <nav className={`
       ${className ?? ""}
     `}>
-      <ul className="flex justify-between items-center list-none">
+      <ul className="flex justify-between items-center list-none gap-x-2 md:gap-x-4">
         <NavItem
-          icon={<IconHome />}
+          icon={IconHome}
           link="#"
           className="hidden lg:flex"
         >
           Início
         </NavItem>
         <NavItem
-          icon={<IconDental />}
+          icon={IconDental}
           link="#sobre"
           className="hidden md:flex"
         >
           Sobre
         </NavItem>
         <NavItem
-          icon={<IconMapPinFilled />}
+          icon={IconMapPinFilled}
           link="#endereco"
           ariaLabel="Localização no Google Maps."
           className="hidden md:flex"
@@ -34,7 +34,7 @@ export default function Navbar({ className }: NavProps) {
           Endereço
         </NavItem>
         <NavItem
-          icon={<IconPhone />}
+          icon={IconPhone}
           link="https://wa.me/5548999299977"
           target="_blank"
           ariaLabel="Contato por WhatsApp."

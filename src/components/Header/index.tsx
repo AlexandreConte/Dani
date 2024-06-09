@@ -45,9 +45,9 @@ export default function Header() {
         <Area>
           <header className="
             w-full 
-            flex items-center justify-center flex-wrap
+            flex-center
             min-[320px]:justify-between
-            py-6 mx-auto
+            py-6 mx-auto px-2
             sm:py-10
             min-[375px]:px-2
           ">

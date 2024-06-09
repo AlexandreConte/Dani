@@ -1,5 +1,5 @@
-import Area from "../../common/Area"
 import Slider from "@/components/common/Slider"
+import Area from "../common/Area"
 
 interface AdressProps {
   iframeSrc: string
@@ -9,7 +9,7 @@ interface AdressProps {
 
 export default function Adress({ iframeSrc, adressLine, gMapsHref }: AdressProps) {
   return (
-    <Area className="flex-col-center mx-auto">
+    <Area className="flex-col-center mx-auto px-4">
       <span className="text-center w-full text-white flex flex-col items-center justify-center text-2xl font-semibold">Endereço</span>
       <Slider>
         <div id="endereco" className="mt-8 flex-col-center">

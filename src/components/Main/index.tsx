@@ -1,20 +1,19 @@
-import Contact from "./Contact";
-import Clinic from "./Clinic";
-import Adress from "./Address";
-
-import About from "./About";
+import Contact from "../Contact";
+import Clinic from "../Clinic";
+import About from "../About";
 import WithColorBackground from "../common/WithColorBackground";
-import BackgroundImage from "./BackgroundImage";
+import BackgroundImage from "../BackgroundImage";
 import FullWidth from "../common/FullWidth";
-import Quote from "./Quote";
-import Specializations from "./Specializations";
+import Quote from "../Quote";
+import Specializations from "../Specializations";
+import Adress from "../Address";
 
 export default function MainContent() {
   return (
     <FullWidth>
       <BackgroundImage />
       <WithColorBackground>
-        <main className="pt-14">
+        <main className="gap-y-[50px]">
           <About />
           <Quote />
           <Clinic />

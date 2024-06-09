@@ -7,7 +7,6 @@ import Image from "next/image"
 
 // Library
 import Slider from "@/components/common/Slider"
-import Specializations from "@/components/Main/Specializations"
 import Area from "@/components/common/Area"
 
 interface ClinicProps {
@@ -16,7 +15,7 @@ interface ClinicProps {
 
 export default function Clinic({ className }: ClinicProps) {
   return (
-    <div className={`flex flex-col items-center ${className ?? ""}`}>
+    <div className={`flex flex-col items-center pt-[50px] pb-[25px] ${className ?? ""}`}>
       <span className="text-white text-2xl mb-10 font-semibold">A clínica</span>
       <Area className="
         flex justify-evenly flex-col lg:flex-row
