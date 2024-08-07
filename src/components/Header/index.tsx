@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import FullWidth from "../common/FullWidth"
 import Logo from "../common/Logo"
 import Navbar from "./Navbar"
 import Area from "../common/Area"
@@ -30,8 +29,8 @@ export default function Header() {
   }, [scrollY])
 
   return (
-    <>
-      <FullWidth className={`
+    <div>
+      <div className={`
         bg-wTransparency
         w-full
         flex-center
@@ -40,6 +39,7 @@ export default function Header() {
         transition-transform duration-500
         backdrop-blur-lg
         shadow-lg
+        min-w-screen max-w-[100vw]
       ${isHeaderVisibile ? "" : "-translate-y-[125px]"}
     `}>
         <Area>
@@ -55,8 +55,8 @@ export default function Header() {
             <Navbar className="hidden min-[320px]:flex" />
           </header>
         </Area>
-      </FullWidth>
+      </div>
       <div className="w-full h-[125px]"></div>
-    </>
+    </div>
   )
 }

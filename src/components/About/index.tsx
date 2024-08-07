@@ -1,11 +1,6 @@
-//  Components
 import ProfessionalCard from "./ProfessionalCard";
-
-// Images
-import profileImage from "public/images/perfil.jpg";
-
-// Library
 import Slider from "@/components/common/Slider";
+import profileImage from "@/../public/images/perfil.jpg";
 
 export default function About() {
   return (

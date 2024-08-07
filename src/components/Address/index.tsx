@@ -16,7 +16,7 @@ export default function Adress({ iframeSrc, adressLine, gMapsHref }: AdressProps
           <iframe src={iframeSrc} className="w-full h-[300px]" loading="lazy" title="Endereço"></iframe>
           <div className="pt-8 py-16 flex flex-col justify-center items-center px-4 text-center">
             <address className="text-white">{adressLine}</address>
-            <a href={gMapsHref} target="_blank" className="underline text-white">
+            <a href={gMapsHref} target="_blank" className="underline text-white mt-4">
               Google Maps
             </a>
           </div>

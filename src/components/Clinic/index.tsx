@@ -1,11 +1,6 @@
-// IMAGES
-import backgroundImage from "public/images/backgrounds/dani-bg2.jpg"
-import backgroundImage2 from "public/images/backgrounds/consultorio-bg.jpeg"
-
-// Next Components
+import backgroundImage from "@/../public/images/backgrounds/dani-bg2.jpg"
+import backgroundImage2 from "@/../public/images/backgrounds/consultorio-bg.jpeg"
 import Image from "next/image"
-
-// Library
 import Slider from "@/components/common/Slider"
 import Area from "@/components/common/Area"
 
@@ -15,7 +10,7 @@ interface ClinicProps {
 
 export default function Clinic({ className }: ClinicProps) {
   return (
-    <div className={`flex flex-col items-center pt-[50px] pb-[25px] ${className ?? ""}`}>
+    <div className={`flex-col-center pt-[50px] pb-[25px] ${className ?? ""}`}>
       <span className="text-white text-2xl mb-10 font-semibold">A clínica</span>
       <Area className="
         flex justify-evenly flex-col lg:flex-row

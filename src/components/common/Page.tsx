@@ -1,10 +1,11 @@
 interface PageProps {
   children: any
+  className?: string
 }
 
-export default function Page({ children }: PageProps) {
+export default function Page({ children, className }: PageProps) {
   return (
-    <div className="w-screen mx-auto min-h-screen">
+    <div className={`w-full mx-auto min-h-screen ${className}`}>
       {children}
     </div>
   )

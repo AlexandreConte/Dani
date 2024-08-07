@@ -25,7 +25,7 @@ export default function ScrollTop() {
         <div
           onClick={handleClick}
           className="bg-neutral-300 
-          rounded-full w-8 h-8 
+          rounded-full w-10 h-10
           fixed bottom-2 right-2 
           cursor-pointer 
           flex items-center justify-center"

@@ -5,7 +5,7 @@ export interface AreaProps {
 
 export default function Area({ children, className }: AreaProps) {
   return (
-    <div className={`w-full max-w-[90%] mx-auto ${className ?? ''}`}>
+    <div className={`w-full max-w-[90%] mx-auto flex justify-center ${className ?? ''}`}>
       {children ?? null}
     </div>
   )

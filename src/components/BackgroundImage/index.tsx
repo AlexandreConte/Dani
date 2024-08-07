@@ -1,5 +1,5 @@
 import Image from "next/image"
-import backgroundImage from "public/images/backgrounds/dani-bg.jpg"
+import backgroundImage from "@/../public/images/backgrounds/dani-bg.jpg"
 
 export default function BackgroundImage() {
   return (
@@ -10,8 +10,9 @@ export default function BackgroundImage() {
     `}>
       <Image
         src={backgroundImage}
+        priority
         alt="Dra. Daniela Aline Conte trabalhando na sua clínica odontológica em Florianópolis"
-        className={`flex fixed -z-20 w-full h-auto`}
+        className={`flex fixed -z-20 w-full h-auto max-w-[100vw]`}
       />
     </div>
   )

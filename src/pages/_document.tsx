@@ -7,7 +7,7 @@ export default function Document() {
         <meta name="description" content="Dentista Florianópolis | Especialista em prótese" />
         <link rel="icon" href="favicon.svg" type="image/svg" />
       </Head>
-      <body className='min-w-full bg'>
+      <body className='max-w-[100vw] w-full bg'>
         <Main />
         <NextScript />
       </body>
