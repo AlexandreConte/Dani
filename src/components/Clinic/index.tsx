@@ -13,7 +13,7 @@ export default function Clinic({ className }: ClinicProps) {
     <div className={`flex-col-center pt-[50px] pb-[25px] ${className ?? ""}`}>
       <span className="text-white text-2xl mb-10 font-semibold">A clínica</span>
       <Area className="
-        flex justify-evenly flex-col lg:flex-row
+        flex justify-center flex-col lg:flex-row gap-x-4
         w-full max-w-[1440px] h-full
         px-4 gap-y-8
     ">
