@@ -21,14 +21,14 @@ export default function SingleReview(props: SingleReviewProps) {
         <Image
           alt={`Foto de perfil`}
           src={props.imageSrc}
-          className="w-[60px]"
+          className="w-[60px] select-none"
           width={120}
           height={120}
         />
-        <div className="text-base text-white font-bold text-center">
+        <div className="text-base text-black font-bold text-center">
           {props.name}
         </div>
-        <div className="text-zinc-200 text-center text-sm">{props.comment}</div>
+        <div className="text-black text-center text-sm">{props.comment}</div>
       </div>
     </Link>
   );

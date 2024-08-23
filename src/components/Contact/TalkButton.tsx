@@ -23,7 +23,7 @@ export default function TalkButton({ className }: TalkButtonProps) {
           <IconBrandWhatsapp strokeWidth={1.5} color="#fff" size={30} />
         </span>
         <span className="flex-center text-center font-normal hover:underline text-lg md:text-xl">
-          Falar com especialista
+          +55 (48) 9 9929-9977
         </span>
       </div>
     </a>

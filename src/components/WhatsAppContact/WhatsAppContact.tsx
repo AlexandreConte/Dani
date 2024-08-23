@@ -6,11 +6,12 @@ export default function WhatsAppContact() {
   
   return (
     <Link href={whatsAppLink} target="_blank" className="
-      fixed bottom-2 left-2 z-10 w-10 h-10 p-1 bg-neutral-300 flex-center rounded-full
+      fixed bottom-4 right-4 z-10 w-[50px] h-[50px] p-[6px] flex-center rounded-full
+      bg-[#0CC142] hover:scale-105
     ">
       <IconBrandWhatsapp
-        width={24}
-        color="black"
+        color="white"
+        className="w-full h-full"
       />
     </Link >
   )

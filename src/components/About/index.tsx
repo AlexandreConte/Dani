@@ -11,7 +11,7 @@ export default function About() {
         <ProfessionalCard
           name={"Dra. Daniela Aline Conte"}
           image={profileImage}
-          specialization={"Dentista Especialista e Mestre em Prótese e Reabilitação Oral"}
+          specialization={"Especialista e Mestre em Prótese e Reabilitação Oral"}
           instaUrl={"https://www.instagram.com/dradaniconte/"}
           local="Santa Catarina, Florianópolis - Campeche"
         />
