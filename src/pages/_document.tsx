@@ -7,7 +7,7 @@ export default function Document() {
     <Html lang="pt-br">
       <Head>
         {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
-        <meta name="description" content="Dentista Florianópolis | Especialista em prótese" />
+        <meta name="description" content="Dra. Daniela Conte te ajuda a conquistar o sorriso dos seus sonhos em Florianópolis" />
         <link rel="icon" href="favicon.svg" type="image/svg" />
       </Head>
       <body className='max-w-[100vw] w-full bg'>
