@@ -36,7 +36,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <div className="mt-[50px] mb-[25px] flex-col-center mx-3 w-full h-auto">
+    <div className="mt-[50px] mb-[25px] flex-col-center w-full h-auto">
       <div className="bg-white py-14 rounded-xl flex-col-center selection:bg-[#328185] selection:text-white">
         <div className="flex-col-center">
           <div>
