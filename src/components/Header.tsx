@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import Logo from "../common/Logo"
+import Logo from "./Shared/Logo"
 import Navbar from "./Navbar"
-import Area from "../common/Area"
+import Area from "./Shared/Area"
 
 export default function Header() {
 
@@ -12,7 +12,7 @@ export default function Header() {
     function handleScroll() {
       const currentScroll = window.scrollY
 
-      if (window.scrollY <= 125) {
+      if (window.scrollY <= window.innerHeight) {
         setIsHeaderVisible(true)
         return
       }
@@ -29,7 +29,7 @@ export default function Header() {
   }, [scrollY])
 
   return (
-    <div>
+    <div className="lg:max-w-7xl">
       <div className={`
         bg-wTransparency
         w-full
@@ -46,7 +46,7 @@ export default function Header() {
           <header className="
             w-full 
             flex-center
-            min-[320px]:justify-between
+            min-[425px]:justify-between
             py-6 mx-auto px-2
             sm:py-10
             min-[375px]:px-2
@@ -56,7 +56,6 @@ export default function Header() {
           </header>
         </Area>
       </div>
-      <div className="w-full h-[125px]"></div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import styles from "@/styles/Logo.module.css"
-import Slider from "@/components/common/Slider"
+import Slider from "@/components/Shared/Slider"
 import TalkButton from "./TalkButton"
 
 interface ContactProps {

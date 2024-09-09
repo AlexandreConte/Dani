@@ -1,5 +1,5 @@
 import ProfessionalCard from "./ProfessionalCard";
-import Slider from "@/components/common/Slider";
+import Slider from "@/components/Shared/Slider";
 import profileImage from "@/../public/images/perfil.jpg";
 
 export default function About() {

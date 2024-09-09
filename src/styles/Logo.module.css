@@ -9,4 +9,5 @@
 .logo {
     font-family: "AustraliaScript";
     color: white;
+    user-select: none;
 }

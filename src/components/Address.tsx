@@ -1,5 +1,5 @@
-import Slider from "@/components/common/Slider"
-import Area from "../common/Area"
+import Slider from "@/components/Shared/Slider"
+import Area from "./Shared/Area"
 
 interface AdressProps {
   iframeSrc: string

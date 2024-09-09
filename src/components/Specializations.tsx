@@ -1,5 +1,5 @@
-import AreaWithMarginX from "../common/AreaWithMarginX";
-import Slider from "../common/Slider";
+import AreaWithMarginX from "./Shared/AreaWithMarginX";
+import Slider from "./Shared/Slider";
 import SpecialItem from "./SpecializationItem";
 
 const specializations = [
@@ -26,9 +26,6 @@ export default function Specializations() {
         w-full
       ">
         {renderSpecializations()}
-      </div>
-      <div className="text-center flex-center text-white text-2xl px-3">
-        <span>É aqui que você conquista o sorriso dos seus sonhos.</span>
       </div>
     </AreaWithMarginX>
   )

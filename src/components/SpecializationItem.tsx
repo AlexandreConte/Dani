@@ -9,7 +9,7 @@ export default function SpecialItem(props: SpecialItemProps) {
       bg-neutral-200 text-black 
       rounded-md 
       py-4 mx-8
-      text-center hover:-translate-y-3 transition-transform
+      text-center hover:-translate-y-3 transition-transform duration-300
       min-w-[200px]
     ">
       {props.children}

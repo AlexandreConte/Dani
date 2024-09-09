@@ -1,8 +1,8 @@
 import backgroundImage from "@/../public/images/backgrounds/dani-bg2.jpg"
 import backgroundImage2 from "@/../public/images/backgrounds/consultorio-bg.jpeg"
 import Image from "next/image"
-import Slider from "@/components/common/Slider"
-import Area from "@/components/common/Area"
+import Slider from "@/components/Shared/Slider"
+import Area from "@/components/Shared/Area"
 
 interface ClinicProps {
   className?: string
@@ -26,7 +26,7 @@ export default function Clinic({ className }: ClinicProps) {
         </Slider>
         <Slider direction="right" className="flex justify-center items-center">
           <Image
-            className="max-h-[80vh] w-full object-cover"
+            className="max-h-[80vh] w-full object-cover lg:h-full"
             src={backgroundImage2}
             alt="Consultório da Dentista em Santa Catarina, Florianópolis - Campeche"
           />

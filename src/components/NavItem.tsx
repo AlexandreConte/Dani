@@ -20,7 +20,7 @@ export function NavItem(props: NavItemProps) {
         aria-label={props.ariaLabel ?? ""}
         className={`
           border-b-2 border-transparent
-          hover:border-white transition-colors
+          hover:border-white transition-colors duration-300
           flex
           lg:mx-1
           sm:mx-3
