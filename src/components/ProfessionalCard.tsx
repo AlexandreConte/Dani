@@ -26,7 +26,6 @@ export default function ProfessionalCard({ name, image, specialization, instaUrl
         </h2>
         <h1 className="text-center text-zinc-600 mb-4 font-medium">Dentista</h1>
         <h1 className="text-center mx-6 my-2 text-zinc-800">{specialization}</h1>
-        <h1 className="text-center mx-6 my-2 text-zinc-800">Professora em Instituto de Odontologia das Américas</h1>
         <h1 className="text-center mx-6 my-2 text-zinc-800">{local}</h1>
         <div className="flex justify-center items-center">
           <a href={instaUrl} className="flex justify-center items-center hover:scale-110 transition-transform w-fit duration-500" target="_blank">
