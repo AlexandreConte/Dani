@@ -14,7 +14,7 @@ export default function Contact({ className }: ContactProps) {
         <div className={`flex-col-center ${className ?? ""}`}>
           <h2 className={`${styles.logo} text-4xl text-center md:text-5xl my-6`}>Dra Daniela Conte</h2>
           <h1 className="
-            text-white font-extralight text-xl md:text-2xl
+            text-white font-normal text-xl md:text-2xl
             flex-center
             text-center my-4
           ">

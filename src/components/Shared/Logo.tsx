@@ -12,7 +12,7 @@ export default function Logo({ className }: LogoProps) {
       href="/"
       id="logo"
     >
-      <h1 className={`${styles.logo} text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl select-none`}>
+      <h1 className={`${styles.logo} text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-[#cb8157]`}>
         Dra Daniela Conte
       </h1>
     </Link>

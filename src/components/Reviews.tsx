@@ -37,10 +37,10 @@ const reviews = [
 export default function Reviews() {
   return (
     <div className="mt-[50px] mb-[25px] flex-col-center w-full h-auto">
-      <div className="bg-white py-14 rounded-xl flex-col-center selection:bg-[#328185] selection:text-white">
+      <div className="bg-neutral-100 py-14 rounded-xl flex-col-center">
         <div className="flex-col-center">
           <div>
-            <Image alt="Google brand icon" src={googleLogo} width={100} className="select-none" />
+            <Image alt="Google brand icon" src={googleLogo} width={100} />
           </div>
           <div className="flex-center flex-wrap gap-x-2 gap-y-8 mx-4 my-8">
             <div className="text-black font-semibold">5,0</div>
@@ -51,7 +51,7 @@ export default function Reviews() {
               <IconStarFilled className="text-yellow-500" />
               <IconStarFilled className="text-yellow-500" />
             </div>
-            <div className="text-black flex-center text-center">30+ avaliações</div>
+            <div className="text-black flex-center text-center">40+ avaliações</div>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">{renderReviews()}</div>

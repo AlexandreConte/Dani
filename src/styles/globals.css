@@ -6,7 +6,7 @@
 
 body,
 .bg {
-  @apply bg-[#328185];
+  @apply bg-[#a8c8b6];
 }
 
 html, body {
@@ -18,7 +18,7 @@ html, body {
 }
 
 .bg-wTransparency {
-  @apply bg-[rgba(50,129,133,0.8)];
+  @apply bg-[#a8c8b6];
 }
 
 .flex-center {
@@ -27,9 +27,4 @@ html, body {
 
 .flex-col-center {
   @apply flex-center flex-col;
-}
-
-*::selection {
-  background-color: white;
-  color: black;
 }

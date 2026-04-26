@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Dra. Daniela Conte | Dentista especializada em Prótese</title>
+        <title>Dra. Daniela Conte - Dentista especializada em Prótese</title>
       </Head>
       <Page>
         <Header />

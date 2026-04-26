@@ -21,7 +21,7 @@ export default function SingleReview(props: SingleReviewProps) {
         <Image
           alt={`Foto de perfil`}
           src={props.imageSrc}
-          className="w-[60px] select-none"
+          className="w-[60px]"
           width={120}
           height={120}
         />
