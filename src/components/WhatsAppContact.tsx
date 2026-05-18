@@ -1,18 +1,17 @@
 import { IconBrandWhatsapp } from "@tabler/icons-react";
-import Link from "next/link";
 
 export default function WhatsAppContact() {
   const whatsAppLink = "https://wa.me/5548999299977"
-  
+
   return (
-    <Link href={whatsAppLink} target="_blank" className="
+    <a href={whatsAppLink} target="_blank" className="
       fixed bottom-4 right-4 z-10 w-[50px] h-[50px] p-[6px] flex-center rounded-full
-      bg-[#0CC142] hover:scale-105
+      bg-[#0CC142]
     ">
       <IconBrandWhatsapp
         color="white"
         className="w-full h-full"
       />
-    </Link >
+    </a >
   )
 }

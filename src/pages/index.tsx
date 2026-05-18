@@ -10,6 +10,7 @@ import Reviews from '@/components/Reviews'
 import Contact from '@/components/Contact'
 import Adress from '@/components/Address'
 import Slogan from '@/components/Slogan'
+import Schedule from '@/components/Schedule'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <main className="flex flex-col gap-y-[50px] bg">
           <About />
           <Quote />
+          <Schedule />
           <Clinic />
           <Specializations />
           <Reviews />

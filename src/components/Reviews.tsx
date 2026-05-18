@@ -62,9 +62,7 @@ export default function Reviews() {
 
 function renderReviews() {
   return reviews.map((review) => (
-    <div className="rounded-xl hover:scale-105 transition-all"
-      key={review.name}
-    >
+    <div key={review.name}>
       <SingleReview
         name={review.name}
         comment={review.comment}

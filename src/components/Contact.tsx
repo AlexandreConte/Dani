@@ -18,7 +18,7 @@ export default function Contact({ className }: ContactProps) {
             flex-center
             text-center my-4
           ">
-            Especialista e Mestre em Prótese e Reabilitação Oral
+            Dentista Especialista e Mestre em Prótese e Reabilitação Oral
           </h1>
           <TalkButton />
         </div>

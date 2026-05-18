@@ -18,7 +18,7 @@ html, body {
 }
 
 .bg-wTransparency {
-  @apply bg-[#a8c8b6];
+  @apply bg-[#a8c8b6c0];
 }
 
 .flex-center {

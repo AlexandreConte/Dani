@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 
 export interface SingleReviewProps {
   name: string;
@@ -12,7 +11,7 @@ export interface SingleReviewProps {
 
 export default function SingleReview(props: SingleReviewProps) {
   return (
-    <Link
+    <a
       className={`flex flex-wrap max-w-[200px] h-[200px] mx-6`}
       href={props.link}
       target="_blank"
@@ -30,6 +29,6 @@ export default function SingleReview(props: SingleReviewProps) {
         </div>
         <div className="text-black text-center text-sm">{props.comment}</div>
       </div>
-    </Link>
+    </a>
   );
 }

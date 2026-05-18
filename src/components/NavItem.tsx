@@ -19,8 +19,7 @@ export function NavItem(props: NavItemProps) {
         target={props.target ?? "_self"}
         aria-label={props.ariaLabel ?? ""}
         className={`
-          border-b-2 border-transparent
-          hover:border-white transition-colors duration-300
+          hover:border-[#2D4F40]
           flex
           lg:mx-1
           sm:mx-3
@@ -28,7 +27,7 @@ export function NavItem(props: NavItemProps) {
         `}
       >
         <div className="flex-center">
-          <div className="flex-center gap-1.5 text-white">
+          <div className="flex-center gap-1.5 text-[#2D4F40]">
             <span>
               <props.icon className="
                 w-[18px]
