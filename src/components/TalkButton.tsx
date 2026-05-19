@@ -21,7 +21,7 @@ export default function TalkButton({ className }: TalkButtonProps) {
         <span className="flex-center text-center text-white">
           <IconBrandWhatsapp strokeWidth={1.5} color="#2D4F40" size={30} />
         </span>
-        <span className="flex-center text-center font-normal hover:underline text-lg md:text-xl text-[#2D4F40]">
+        <span className="flex-center text-center font-normal text-lg md:text-xl text-[#2D4F40]">
           Entrar em contato
         </span>
       </div>
