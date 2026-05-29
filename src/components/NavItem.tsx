@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { ElementType } from "react"
 
 interface NavItemProps {
@@ -15,7 +16,7 @@ export function NavItem(props: NavItemProps) {
 
   return (
     <li className="sm:text-lg lg:text-xl">
-      <a href={props.link}
+      <Link href={props.link}
         target={props.target ?? "_self"}
         aria-label={props.ariaLabel ?? ""}
         className={`
@@ -27,7 +28,7 @@ export function NavItem(props: NavItemProps) {
         `}
       >
         <div className="flex-center">
-          <div className="flex-center gap-1.5 text-[#2D4F40]">
+          <div className="flex-center gap-1 text-[#2D4F40]">
             <span>
               <props.icon className="
                 w-[18px]
@@ -42,7 +43,7 @@ export function NavItem(props: NavItemProps) {
             </span>
           </div>
         </div>
-      </a>
+      </Link>
     </li>
   )
 }

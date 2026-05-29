@@ -20,13 +20,13 @@ export default function Home() {
         <meta name="description" content="Clínica odontológica da Dra. Daniela Conte no Campeche, Florianópolis (Shopping Oka Floripa). Especialista em Prótese Dentária, estética e reabilitação oral." />
         <meta name="keywords" content="dentista campeche, dentista florianópolis, clínica odontológica florianópolis, prótese dentária, reabilitação oral, oka floripa" />
         <meta name="robots" content="index, follow" />
-        
+
         {/* Open Graph / Redes Sociais */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Dra. Daniela Conte - Dentista no Campeche" />
-        <meta property="og:description" content="Especialista em Prótese Dentária, estética e reabilitação oral no Shopping Oka Floripa, Campeche." />
+        <meta property="og:description" content="Dentista Especialista em Prótese Dentária, estética e reabilitação oral no Shopping Oka Floripa, Campeche." />
         <meta property="og:site_name" content="Dra. Daniela Conte" />
-        
+
         {/* Dados Estruturados de Negócio Local para o Google (JSON-LD) */}
         <script
           type="application/ld+json"

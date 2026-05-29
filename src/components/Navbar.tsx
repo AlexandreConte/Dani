@@ -1,4 +1,4 @@
-import { IconDental, IconHome, IconMapPinFilled } from "@tabler/icons-react"
+import { IconDental, IconMapPinFilled } from "@tabler/icons-react"
 import { NavItem } from "./NavItem"
 
 export interface NavProps {
@@ -12,28 +12,28 @@ export default function Navbar({ className }: NavProps) {
     `}>
       <ul className="flex justify-between items-center list-none gap-x-2 md:gap-x-4">
         <NavItem
-          icon={IconHome}
-          link="#"
-          className="hidden lg:flex"
+          icon={IconDental}
+          link="/tratamentos"
+          className="hidden min-[425px]:flex"
         >
-          Início
+          Tratamentos
         </NavItem>
         <NavItem
           icon={IconDental}
-          link="#sobre"
+          link="/#sobre"
           className="hidden md:flex"
         >
           Sobre
         </NavItem>
         <NavItem
           icon={IconMapPinFilled}
-          link="#endereco"
+          link="/#endereco"
           ariaLabel="Localização no Google Maps."
-          className="hidden min-[425px]:flex"
+          className="hidden sm:flex"
         >
           Endereço
         </NavItem>
       </ul>
-    </nav>
+    </nav >
   )
 }
