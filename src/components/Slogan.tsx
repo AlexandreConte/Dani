@@ -16,7 +16,7 @@ export default function BackgroundImage() {
         className={`fixed top-0 left-0 w-full h-[400px] md:h-screen -z-20 object-cover translate-y-28`}
       />
       <div>
-        <h1 className="flex flex-col text-center text-white translate-y-[120px] md:translate-y-36 lg:translate-y-32 xl:translate-y-24">
+        <h1 className="flex flex-col text-center text-white -translate-y-[120px] md:-translate-y-36 lg:-translate-y-10 xl:-translate-y-24">
           <span className="text-lg sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter">
             Conquiste o sorriso
           </span>
