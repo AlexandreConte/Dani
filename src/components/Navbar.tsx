@@ -27,7 +27,7 @@ export default function Navbar({ className }: NavProps) {
         </NavItem>
         <NavItem
           icon={IconMapPinFilled}
-          link="/#endereco"
+          link="#endereco"
           ariaLabel="Localização no Google Maps."
           className="hidden sm:flex"
         >

@@ -1,20 +1,29 @@
 import Header from "@/components/Header";
 import Page from "@/components/Shared/Page";
 import WhatsAppContact from "@/components/WhatsAppContact";
+import ArticlePreview from "@/components/ArticlePreview";
+import Link from "next/link";
+import Footer from "@/components/Footer";
 import zirconiaImg from "@/../public/images/articles/zirconia-1.webp"
 import zirconiaTitanio from "@/../public/images/articles/zirconia_titanio.webp"
-import ArticlePreview from "@/components/ArticlePreview";
+import cariesInfiltracoes from "@/../public/images/articles/zirconia_titanio.webp"
 
 export default function Treatments() {
   return (
-    <Page>
+    <Page className="flex flex-col items-center">
       <Header />
       <WhatsAppContact />
-      <main className="container mx-auto px-4 py-12 md:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 text-white">
-            Sobre Alguns Tratamentos
-          </h1>
+      <main className="container px-4 flex flex-col items-center">
+        <div className="max-w-4xl flex flex-col items-center mb-12">
+          <div className="bg-[#2D4F40] w-screen py-12">
+            <h1 className="text-3xl md:text-5xl font-bold text-center text-white">
+              Tratamentos
+            </h1>
+          </div>
+
+          <Link href="/" className="text-center flex justify-center items-center mt-12">
+            Início
+          </Link>
 
           <p className="text-lg text-zinc-600 text-center mb-12">
             {/* Aqui você pode inserir uma breve introdução sobre a qualidade dos tratamentos oferecidos. */}
@@ -38,9 +47,26 @@ export default function Treatments() {
               title="Implantes de Titânio versus implantes de Zircônia"
             />
 
+            <ArticlePreview
+              link="tratamentos/caries"
+              alt="Cáries e infiltrações dentárias"
+              image={cariesInfiltracoes}
+              textPreview="O tratamento de cáries e infiltrações é fundamental para manter a saúde e a integridade dos dentes. Através de uma avaliação cuidadosa..."
+              title="Cáries e infiltrações dentárias"
+            />
+
+            <ArticlePreview
+              link="tratamentos/profilaxia"
+              alt="Profilaxia"
+              image={cariesInfiltracoes}
+              textPreview="A profilaxia (limpeza dental) é fundamental para a prevenção de doenças bucais e para a manutenção da saúde oral. O procedimento promove a..."
+              title="Profilaxia"
+            />
+
           </div>
         </div>
       </main>
+      <Footer />
     </Page>
   )
 }

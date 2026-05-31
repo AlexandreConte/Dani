@@ -4,6 +4,8 @@ import Image from "next/image";
 import zirconia1 from "@/../public/images/articles/zirconia-1.webp"
 import zirconia2 from "@/../public/images/articles/zirconia-2.webp"
 import WhatsAppContact from "@/components/WhatsAppContact";
+import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function Zirconia() {
   return (
@@ -11,6 +13,12 @@ export default function Zirconia() {
       <WhatsAppContact />
       <Header />
       <main className="container mx-auto px-4 py-12 md:py-20 max-w-4xl">
+        <div className="flex justify-center gap-2 mb-12">
+          <Link href={"/"}>Início</Link>
+          &gt;
+          <Link href={"/tratamentos"}>Tratamentos</Link>
+        </div>
+
         <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 text-white">
           Implantes de Zircônia
         </h1>
@@ -67,6 +75,7 @@ export default function Zirconia() {
           </ul>
         </div>
       </main>
+      <Footer />
     </Page>
   )
 }

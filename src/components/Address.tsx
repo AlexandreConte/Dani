@@ -1,5 +1,4 @@
-import Slider from "@/components/Shared/Slider"
-import Area from "./Shared/Area"
+import { IconBrandGoogleMaps, IconMap, IconMap2, IconMapPin, IconMapPin2, IconPin, IconPinEnd, IconPinFilled } from "@tabler/icons-react"
 
 interface AdressProps {
   iframeSrc: string
@@ -9,19 +8,21 @@ interface AdressProps {
 
 export default function Adress({ iframeSrc, adressLine, gMapsHref }: AdressProps) {
   return (
-    <Area className="flex-col-center mx-auto px-4">
-      <span className="text-center w-full text-white flex flex-col items-center justify-center text-2xl font-semibold">Endereço da Clínica</span>
-      <Slider>
-        <div id="endereco" className="mt-8 flex-col-center">
-          <iframe src={iframeSrc} className="w-full h-[300px]" loading="lazy" title="Endereço"></iframe>
-          <div className="pt-8 py-16 flex flex-col justify-center items-center px-4 text-center">
-            <address className="text-white text-lg">{adressLine}</address>
-            <a href={gMapsHref} target="_blank" className="underline text-[#2D4F40] mt-4">
-              Abrir no Google Maps
-            </a>
+    <div id="endereco" className="flex flex-col max-w-[300px] flex-wrap gap-2 items-center">
+      <span className="flex gap-1 text-white pb-2">
+        <IconMapPin />
+        Endereço 
+      </span>
+      <iframe src={iframeSrc} className="w-[200px] h-[250px]" loading="lazy" title="Endereço"></iframe>
+      <div className="py-2 px-4">
+        <a href={gMapsHref} target="_blank" className="flex flex-col gap-4 text-zinc-300 text-center text-md">
+          <address>{adressLine}</address>
+          <div className="flex gap-1 text-center justify-center">
+            <IconMap />
+            <span>Abrir no Google Maps</span>
           </div>
-        </div>
-      </Slider>
-    </Area>
+        </a>
+      </div>
+    </div>
   )
 }
