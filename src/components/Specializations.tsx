@@ -36,7 +36,7 @@ const specializations = [
   {
     id: 6,
     specialization: "Facetas",
-    link: "/tratamentos/" // ajustar link
+    link: "/tratamentos/facetas" // ajustar link
   },
 ]
 

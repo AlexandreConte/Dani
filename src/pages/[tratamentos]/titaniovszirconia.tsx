@@ -1,8 +1,7 @@
 import Header from "@/components/Header";
 import Page from "@/components/Shared/Page";
 import Image from "next/image";
-import zirconia1 from "@/../public/images/articles/zirconia-1.webp"
-import zirconia2 from "@/../public/images/articles/zirconia-2.webp"
+import ZirconiaETitanio from "@/../public/images/articles/zirconia_titanio.webp"
 import WhatsAppContact from "@/components/WhatsAppContact";
 import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
@@ -29,8 +28,7 @@ export default function Titaniovszirconia() {
           </h1>
 
           <div className="w-full flex flex-wrap justify-center gap-2 mt-5 mb-10" >
-            <Image alt="Implante de zircônia" src={zirconia1} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
-            <Image alt="Implante de zircônia" src={zirconia2} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
+            <Image alt="Implante de zircônia e implante de titânio" src={ZirconiaETitanio} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
           </div>
           <div className="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-zinc-100 mb-12">
             <p className="text-lg text-zinc-600 leading-relaxed space-y-4">

@@ -18,7 +18,7 @@ export default function ArticlePreview(props: ArticlePreviwProps) {
       </h2>
       <div className="flex gap-4 items-center sm:gap-6">
         <p className="text-zinc-600 leading-relaxed">
-          {props.textPreview} <span className="text-blue-600">Ler Mais</span>
+          {props.textPreview} <br /><span className="text-[#cb8157]">Ler Mais</span>
         </p>
         <Image alt={props.alt} src={props.image} width={700} height={700} className="w-[100px] h-[100px] object-cover rounded-md" />
       </div>

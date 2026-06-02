@@ -33,7 +33,7 @@ export default function Facetas() {
               <br /><br />
               O tratamento é planejado de acordo com as características de cada paciente, permitindo que ele participe e opine durante todo o processo, para que o resultado final fique alinhado às suas expectativas e à naturalidade do sorriso.
             </p>
-            <Image alt="Facetas (Lentes Cerâmicas)" src={facetas} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
+            <Image alt="Resultado antes e depois: Facetas (Lentes Cerâmicas)" src={facetas} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
           </div>
         </main>
       </Area>

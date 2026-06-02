@@ -25,8 +25,8 @@ export default function Zirconia() {
           Implantes de Zircônia
         </h1>
         <div className="w-full flex flex-wrap justify-center gap-2 mt-5 mb-10" >
-          <Image alt="" src={zirconia1} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
-          <Image alt="" src={zirconia2} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
+          <Image alt="Implante de Zircônia" src={zirconia1} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
+          <Image alt="Implante de Zircônia" src={zirconia2} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
         </div>
         <div className="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-zinc-100 mb-12">
           <p className="text-lg text-zinc-600 leading-relaxed space-y-4">

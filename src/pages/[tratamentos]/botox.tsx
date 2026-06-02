@@ -50,8 +50,8 @@ export default function Botox() {
           <div className="bg-[#2D4F40] rounded-3xl p-6 my-12">
             <span className="text-white text-2xl flex flex-col items-center">Resultados Antes e Após Aplicação da Toxina Botulínica</span><br /><br />
             <div className="flex justify-center items-center flex-wrap gap-12">
-              <Image alt="Toxina Botulínica" src={BotoxImg} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
-              <Image alt="Toxina Botulínica" src={BotoxImg1} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
+              <Image alt="Resultado da Toxina Botulínica" src={BotoxImg} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
+              <Image alt="Resultado da Toxina Botulínica" src={BotoxImg1} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
             </div>
           </div>
         </main>

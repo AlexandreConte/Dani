@@ -7,9 +7,9 @@ import Footer from "@/components/Footer";
 import zirconiaImg from "@/../public/images/articles/zirconia-1.webp"
 import zirconiaTitanio from "@/../public/images/articles/zirconia_titanio.webp"
 import cariesInfiltracoes from "@/../public/images/articles/caries.webp"
-// import profilaxia from "@/../public/images/articles/caries.webp" //TODO: AJUSTAR IMAGEM DE PROFILAXIA
-import botox from "@/../public/images/articles/botox.webp" //TODO: AJUSTAR IMAGEM DE PROFILAXIA
-import facetas from "@/../public/images/articles/facetas-lentes-ceramica.webp" //TODO: AJUSTAR IMAGEM DE PROFILAXIA
+// import profilaxia from "@/../public/images/articles/profilaxia.webp" //TODO: AJUSTAR IMAGEM DE PROFILAXIA
+import botox from "@/../public/images/articles/botox.webp"
+import facetas from "@/../public/images/articles/facetas-lentes-ceramica.webp"
 
 export default function Treatments() {
   return (
@@ -67,11 +67,11 @@ export default function Treatments() {
             />
 
             <ArticlePreview
-              link="tratamentos/caries"
+              link="tratamentos/canal"
               alt="Cáries e infiltrações dentárias"
               image={cariesInfiltracoes}
               textPreview="O tratamento de cáries e infiltrações é fundamental para manter a saúde e a integridade dos dentes. Através de uma avaliação cuidadosa..."
-              title="Cáries e Infiltrações Dentárias"
+              title="Tratamento de Canal"
             />
 
           </div>
