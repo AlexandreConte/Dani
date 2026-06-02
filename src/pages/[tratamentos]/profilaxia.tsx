@@ -6,7 +6,7 @@ import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 // import cariesImg from "@/../public/images/articles/caries.webp"
-
+//TODO: Adicionar imagem de profilaxia
 export default function Profilaxia() {
   return (
     <Page>
@@ -15,10 +15,12 @@ export default function Profilaxia() {
       <Area>
         <main className="container mx-auto px-4 py-12 md:py-20 max-w-4xl">
 
-          <div className="flex justify-center gap-2 mb-12">
+          <div className="flex justify-center gap-2 mb-12 flex-wrap">
             <Link href={"/"}>Início</Link>
             &gt;
             <Link href={"/tratamentos"}>Tratamentos</Link>
+            &gt;
+            <Link href={"/tratamentos/profilaxia"} className="underline">Profilaxia</Link>
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 text-white">

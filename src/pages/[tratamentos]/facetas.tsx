@@ -5,9 +5,9 @@ import WhatsAppContact from "@/components/WhatsAppContact";
 import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import cariesImg from "@/../public/images/articles/caries.webp"
+import facetas from "@/../public/images/articles/facetas-lentes-ceramica.webp"
 
-export default function Caries() {
+export default function Facetas() {
   return (
     <Page>
       <WhatsAppContact />
@@ -20,18 +20,20 @@ export default function Caries() {
             &gt;
             <Link href={"/tratamentos"}>Tratamentos</Link>
             &gt;
-            <Link href={"/tratamentos/caries"} className="underline">Cáries e Infiltrações Dentárias</Link>
+            <Link href={"/tratamentos/facetas"} className="underline">Facetas</Link>
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 text-white">
-            Cáries e Infiltrações Dentárias
+            Facetas (Lentes Cerâmicas)
           </h1>
 
           <div className="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-zinc-100 mb-12 flex justify-center gap-8 items-center max-[768px]:flex-wrap">
             <p className="text-lg text-zinc-600 leading-relaxed space-y-4">
-              O tratamento de cáries e infiltrações é fundamental para manter a saúde e a integridade dos dentes. Através de uma avaliação cuidadosa, são removidas as áreas comprometidas e realizadas restaurações estéticas que devolvem função, conforto e naturalidade ao sorriso, além de reforçar a estrutura dental. <br /><br /> As restaurações podem ser feitas em resina ou cerâmica, de acordo com a necessidade de cada caso. O tratamento ajuda a prevenir dores, fraturas e problemas maiores, preservando os dentes de forma segura, eficiente e duradoura.
+              As facetas em cerâmica são laminados ultrafinos confeccionados de forma personalizada para transformar o sorriso com naturalidade e sofisticação. Indicadas para corrigir formato, cor, tamanho e pequenas imperfeições dos dentes, elas proporcionam um resultado estético harmonioso, resistente e duradouro.
+              <br /><br />
+              O tratamento é planejado de acordo com as características de cada paciente, permitindo que ele participe e opine durante todo o processo, para que o resultado final fique alinhado às suas expectativas e à naturalidade do sorriso.
             </p>
-            <Image alt="Implante de zircônia" src={cariesImg} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
+            <Image alt="Facetas (Lentes Cerâmicas)" src={facetas} className="h-[250px] w-auto max-[610px]:h-auto max-[610px]:w-[220px] object-cover"></Image>
           </div>
         </main>
       </Area>

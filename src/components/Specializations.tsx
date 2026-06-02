@@ -1,32 +1,65 @@
+import Link from "next/link";
 import AreaWithMarginX from "./Shared/AreaWithMarginX";
-import Slider from "./Shared/Slider";
 import SpecialItem from "./SpecializationItem";
 
 const specializations = [
-  "Prótese",
-  "Harmonização",
-  "Clareamento",
+  // {
+  //   id: 0,
+  //   specialization: "Prótese",
+  //   link: "/tratamentos/" // TODO: AJUSTAR LINK!
+  // },
+  // {
+  //   id: 1,
+  //   specialization: "Harmonização",
+  //   link: "/tratamentos/" // ajustar link
+  // },
+  // {
+  //   id: 2,
+  //   specialization: "Clareamento",
+  //   link: "/tratamentos/" // ajustar link
+  // },
+  {
+    id: 3,
+    specialization: "Profilaxia",
+    link: "/tratamentos/profilaxia"
+  },
+  {
+    id: 4,
+    specialization: "Implante",
+    link: "/tratamentos/titaniovszirconia"
+  },
+  {
+    id: 5,
+    specialization: "Botox",
+    link: "/tratamentos/botox" // ajustar link
+  },
+  {
+    id: 6,
+    specialization: "Facetas",
+    link: "/tratamentos/" // ajustar link
+  },
 ]
 
 function renderSpecializations() {
-  return (
-    <Slider cascade direction="up" className="max-[1024px]:w-full">
-      {specializations.map((it, index) => (
-        <SpecialItem key={`${it}-${index}`}>{it}</SpecialItem>
-      ))}
-    </Slider>
-  )
+  return specializations.map((it) => (
+    <Link href={it.link} key={`${it.id}`}>
+      <SpecialItem >{it.specialization}</SpecialItem>
+    </Link>
+  ))
 }
 
 export default function Specializations() {
   return (
-    <AreaWithMarginX className="flex-col-center pt-[50px] pb-[25px] gap-y-[25px] w-full">
-      <div className="
-        flex justify-center items-center max-[1024px]:flex-col gap-y-[30px]
-        w-full
-      ">
-        {renderSpecializations()}
-      </div>
-    </AreaWithMarginX>
+    <div>
+      <h3 className="text-center pt-8 text-white text-2xl font-semibold">Tratamentos</h3>
+      <AreaWithMarginX className="pt-[50px] pb-[25px] gap-y-[25px] w-full">
+        <div className="
+          gap-[30px]
+          grid grid-flow-row grid-cols-3
+        ">
+          {renderSpecializations()}
+        </div>
+      </AreaWithMarginX>
+    </div>
   )
 }

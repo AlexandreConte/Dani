@@ -51,7 +51,7 @@ export default function Reviews() {
               <IconStarFilled className="text-yellow-500" />
               <IconStarFilled className="text-yellow-500" />
             </div>
-            <div className="text-black flex-center text-center">40+ avaliações</div>
+            <div className="text-black flex-center text-center">50+ avaliações</div>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">{renderReviews()}</div>

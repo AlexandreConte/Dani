@@ -54,11 +54,11 @@ export default function Home() {
           }}
         />
       </Head>
-      <Page>
+      <Page className='max-w-full overflow-x-hidden'>
         <WhatsAppContact />
         <Header />
         <Slogan />
-        <main className="flex flex-col gap-y-[50px] bg">
+        <main className="bg">
           <About />
           <Quote />
           <Schedule />

@@ -13,7 +13,7 @@ export default function BackgroundImage() {
         src={background}
         alt=""
         priority
-        className={`fixed top-0 left-0 w-full h-[400px] md:h-screen -z-20 object-cover translate-y-28`}
+        className={`fixed top-0 left-0 max-w-full h-[400px] md:h-screen -z-20 object-cover translate-y-28`}
       />
       <div>
         <h1 className="flex flex-col text-center text-white -translate-y-[120px] md:-translate-y-36 lg:-translate-y-10 xl:-translate-y-24">

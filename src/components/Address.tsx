@@ -13,9 +13,9 @@ export default function Adress({ iframeSrc, adressLine, gMapsHref }: AdressProps
         <IconMapPin />
         Endereço 
       </span>
-      <iframe src={iframeSrc} className="w-[200px] h-[250px]" loading="lazy" title="Endereço"></iframe>
+      <iframe src={iframeSrc} className="w-[280px] max-[280px]:w-[200px] h-[250px]" loading="lazy" title="Endereço"></iframe>
       <div className="py-2 px-4">
-        <a href={gMapsHref} target="_blank" className="flex flex-col gap-4 text-zinc-300 text-center text-md">
+        <a href={gMapsHref} target="_blank" className="flex flex-col gap-4 text-zinc-300 active:text-zinc-200 text-center text-md">
           <address>{adressLine}</address>
           <div className="flex gap-1 text-center justify-center">
             <IconMap />

@@ -6,7 +6,10 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import zirconiaImg from "@/../public/images/articles/zirconia-1.webp"
 import zirconiaTitanio from "@/../public/images/articles/zirconia_titanio.webp"
-import cariesInfiltracoes from "@/../public/images/articles/zirconia_titanio.webp"
+import cariesInfiltracoes from "@/../public/images/articles/caries.webp"
+// import profilaxia from "@/../public/images/articles/caries.webp" //TODO: AJUSTAR IMAGEM DE PROFILAXIA
+import botox from "@/../public/images/articles/botox.webp" //TODO: AJUSTAR IMAGEM DE PROFILAXIA
+import facetas from "@/../public/images/articles/facetas-lentes-ceramica.webp" //TODO: AJUSTAR IMAGEM DE PROFILAXIA
 
 export default function Treatments() {
   return (
@@ -21,16 +24,16 @@ export default function Treatments() {
             </h1>
           </div>
 
-          <Link href="/" className="text-center flex justify-center items-center mt-12">
-            Início
-          </Link>
-
-          <p className="text-lg text-zinc-600 text-center mb-12">
-            {/* Aqui você pode inserir uma breve introdução sobre a qualidade dos tratamentos oferecidos. */}
-          </p>
+          <div className="flex justify-center items-center gap-2 py-12 flex-wrap">
+            <Link href="/">
+              Início
+            </Link>
+            &gt;
+            <Link href={"/tratamentos"} className="underline">Tratamentos</Link>
+          </div>
 
           {/* LISTA DE TRATAMENTOS */}
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2 px-2 sm:px-4 md:px-8">
             <ArticlePreview
               link="tratamentos/zirconia"
               alt="Implante de Zircônia"
@@ -44,7 +47,23 @@ export default function Treatments() {
               alt="Implante de Zircônia ou de titânio"
               image={zirconiaTitanio}
               textPreview="Os implantes dentários podem ser realizados com diferentes materiais, sendo os mais conhecidos o titânio e a zircônia. Ambos possuem..."
-              title="Implantes de Titânio versus implantes de Zircônia"
+              title="Implantes de Titânio e Implantes de Zircônia"
+            />
+
+            <ArticlePreview
+              link="tratamentos/botox"
+              alt="Botox"
+              image={botox}
+              textPreview="A aplicação de toxina botulínica, popularmente conhecida como “Botox”, é um procedimento moderno, seguro e minimamente..."
+              title="Toxina Botulínica"
+            />
+
+            <ArticlePreview
+              link="tratamentos/facetas"
+              alt="Facetas (lentes cerâmicas)"
+              image={facetas}
+              textPreview="As facetas em cerâmica são laminados ultrafinos confeccionados de forma personalizada para transformar o sorriso com naturalidade..."
+              title="Facetas (Lentes Cerâmicas)"
             />
 
             <ArticlePreview
@@ -52,15 +71,7 @@ export default function Treatments() {
               alt="Cáries e infiltrações dentárias"
               image={cariesInfiltracoes}
               textPreview="O tratamento de cáries e infiltrações é fundamental para manter a saúde e a integridade dos dentes. Através de uma avaliação cuidadosa..."
-              title="Cáries e infiltrações dentárias"
-            />
-
-            <ArticlePreview
-              link="tratamentos/profilaxia"
-              alt="Profilaxia"
-              image={cariesInfiltracoes}
-              textPreview="A profilaxia (limpeza dental) é fundamental para a prevenção de doenças bucais e para a manutenção da saúde oral. O procedimento promove a..."
-              title="Profilaxia"
+              title="Cáries e Infiltrações Dentárias"
             />
 
           </div>
