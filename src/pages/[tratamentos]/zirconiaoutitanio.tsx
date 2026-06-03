@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import SEO from "@/components/SEO";
 
-export default function Titaniovszirconia() {
+export default function ZirconiaOuTitanio() {
   return (
     <div>
       <SEO keywords="implante, implante de zircônia, implante de titânio, dentista" />
@@ -22,7 +22,7 @@ export default function Titaniovszirconia() {
               &gt;
               <Link href={"/tratamentos"}>Tratamentos</Link>
               &gt;
-              <Link href={"/tratamentos/titaniovszirconia"} className="underline">Implante de Titânio ou Implante de Zircônia</Link>
+              <Link href={"/tratamentos/zirconiaoutitanio"} className="underline">Implante de Titânio ou Implante de Zircônia</Link>
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 text-white">
               Implante de Titânio versus implante de Zircônia

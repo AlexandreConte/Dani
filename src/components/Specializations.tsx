@@ -26,7 +26,7 @@ const specializations = [
   {
     id: 4,
     specialization: "Implante",
-    link: "/tratamentos/titaniovszirconia"
+    link: "/tratamentos/zirconiaoutitanio"
   },
   {
     id: 5,

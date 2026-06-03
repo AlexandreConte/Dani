@@ -46,7 +46,7 @@ export default function Treatments() {
               />
 
               <ArticlePreview
-                link="tratamentos/titaniovszirconia"
+                link="tratamentos/zirconiaoutitanio"
                 alt="Implante de Zircônia ou de titânio"
                 image={zirconiaTitanio}
                 textPreview="Os implantes dentários podem ser realizados com diferentes materiais, sendo os mais conhecidos o titânio e a zircônia. Ambos possuem..."
