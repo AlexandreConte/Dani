@@ -11,7 +11,8 @@ import SEO from "@/components/SEO";
 export default function ZirconiaOuTitanio() {
   return (
     <div>
-      <SEO keywords="implante, implante de zircônia, implante de titânio, dentista" />
+      <SEO title="Implante em Floripa | Anima Odontologia"
+        keywords="implante, implante de zircônia, implante de titânio, dentista" />
       <Page>
         <WhatsAppContact />
         <Header />

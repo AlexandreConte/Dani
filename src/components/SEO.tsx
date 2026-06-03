@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 interface SeoProps {
+  title?: string
   keywords?: string
   description?: string
 }
@@ -8,7 +9,7 @@ interface SeoProps {
 export default function SEO(props: SeoProps) {
   return (
     <Head>
-      <title>Dra. Daniela Conte - Dentista no Campeche, Florianópolis</title>
+      <title>{props.title ?? "Anima Odontologia | Dra. Daniela Conte - Florianópolis"}</title>
       <meta name="description" content={props.description ?? "Clínica Anima Odontologia da Dra. Daniela Conte no Campeche - Florianópolis (Shopping Oka Floripa)."} />
       <meta name="keywords" content={props.keywords ?? "dentista campeche, dentista florianópolis, clínica odontológica florianópolis, prótese dentária, reabilitação oral, oka floripa, clínica anima odontologia, dentista especialista, dentista especializada"} />
       <meta name="robots" content="index, follow" />
