@@ -1,7 +1,6 @@
 import backgroundImage from "@/../public/images/backgrounds/dani-bg2.jpg"
 import backgroundImage2 from "@/../public/images/backgrounds/consultorio-bg.jpeg"
 import Image from "next/image"
-import Slider from "@/components/Shared/Slider"
 import Area from "@/components/Shared/Area"
 
 interface ClinicProps {
@@ -17,20 +16,20 @@ export default function Clinic({ className }: ClinicProps) {
         w-full max-w-[1440px] h-full
         px-4 gap-y-8
     ">
-        <Slider direction="left" className="flex items-center">
+        <div className="flex items-center">
           <Image
             className="max-h-[80vh] w-full object-cover"
             src={backgroundImage}
             alt="Dentista sorrindo sentada em seu consultório com uma agenda na mesa."
           />
-        </Slider>
-        <Slider direction="right" className="flex justify-center items-center">
+        </div>
+        <div className="flex justify-center items-center">
           <Image
             className="max-h-[80vh] w-full object-cover lg:h-full"
             src={backgroundImage2}
             alt="Consultório da Dentista em Santa Catarina, Florianópolis - Campeche"
           />
-        </Slider>
+        </div>
       </Area>
     </div>
   )

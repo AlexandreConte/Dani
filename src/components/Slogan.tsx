@@ -1,5 +1,5 @@
 import Image from "next/image";
-import icon from "../../public/favicon-white.svg";
+import iconDental from "../../public/dental.svg";
 import background from "@/../public/images/backgrounds/dani-bg.jpg";
 
 export default function BackgroundImage() {
@@ -21,7 +21,7 @@ export default function BackgroundImage() {
             Conquiste o sorriso
           </span>
           <span className="flex justify-center items-center text-base md:gap-4 xl:gap-3 xl:ml-2.5 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest font-extralight">
-            dos seus sonhos <Image src={icon} alt="" className="sm:w-10 md:w-14 xl:w-20" />
+            dos seus sonhos <Image src={iconDental} alt="" className="sm:w-10 md:w-14 xl:w-20 text-white" />
           </span>
         </h1>
       </div>
