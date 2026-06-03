@@ -1,4 +1,3 @@
-import animationDuration from "@/utils/constants/animation";
 import { Slide, SlideProps } from "react-awesome-reveal";
 
 interface SliderProps {
@@ -9,13 +8,14 @@ interface SliderProps {
 }
 
 export default function Slider({ children, direction, cascade, className }: SliderProps) {
+  const animationTimer = 350;
   return (
     <Slide
       className={className}
       triggerOnce
       direction={direction}
       cascade={cascade}
-      duration={animationDuration}
+      duration={animationTimer}
     >
       {children}
     </Slide>

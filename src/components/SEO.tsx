@@ -1,17 +1,22 @@
 import Head from "next/head";
 
-export default function SEO(props: any) {
+interface SeoProps {
+  keywords?: string
+  description?: string
+}
+
+export default function SEO(props: SeoProps) {
   return (
     <Head>
       <title>Dra. Daniela Conte - Dentista no Campeche, Florianópolis</title>
-      <meta name="description" content="Clínica odontológica da Dra. Daniela Conte no Campeche, Florianópolis (Shopping Oka Floripa). Especialista em Prótese Dentária, estética e reabilitação oral." />
-      <meta name="keywords" content="dentista campeche, dentista florianópolis, clínica odontológica florianópolis, prótese dentária, reabilitação oral, oka floripa, Clínica Anima Odontologia" />
+      <meta name="description" content={props.description ?? "Clínica Anima Odontologia da Dra. Daniela Conte no Campeche - Florianópolis (Shopping Oka Floripa)."} />
+      <meta name="keywords" content={props.keywords ?? "dentista campeche, dentista florianópolis, clínica odontológica florianópolis, prótese dentária, reabilitação oral, oka floripa, clínica anima odontologia, dentista especialista, dentista especializada"} />
       <meta name="robots" content="index, follow" />
 
       {/* Open Graph / Redes Sociais */}
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Dra. Daniela Conte - Dentista no Campeche" />
-      <meta property="og:description" content="Dentista Especialista em Prótese Dentária, estética e reabilitação oral no Shopping Oka Floripa, Campeche." />
+      <meta property="og:title" content="Anima Odontologia - Dentista em Florianópolis" />
+      <meta property="og:description" content="Clínica Anima Odontologia no Shopping Oka Floripa, Campeche." />
       <meta property="og:site_name" content="Dra. Daniela Conte" />
 
       {/* Dados Estruturados de Negócio Local para o Google (JSON-LD) */}
