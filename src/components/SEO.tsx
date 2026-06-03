@@ -18,7 +18,7 @@ export default function SEO(props: SeoProps) {
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Anima Odontologia - Dentista em Florianópolis" />
       <meta property="og:description" content="Clínica Anima Odontologia no Shopping Oka Floripa, Campeche." />
-      <meta property="og:site_name" content="Dra. Daniela Conte" />
+      <meta property="og:site_name" content="Dra. Daniela Conte | Anima Odontologia" />
 
       {/* Dados Estruturados de Negócio Local para o Google (JSON-LD) */}
       <script
@@ -27,8 +27,9 @@ export default function SEO(props: SeoProps) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Dentist",
-            "name": "Dra. Daniela Conte",
-            "description": "Clínica odontológica especializada em Prótese Dentária, estética e reabilitação oral.",
+            "name": "Dra. Daniela Conte | Anima Odontologia",
+            "telephone": "+55-48-99929-9977",
+            "description": "Clínica Anima Odontologia | Dra Daniela Conte dentista especializada em Prótese Dentária, Estética e Reabilitação Oral em Florianópolis.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Shopping Oka Floripa, Torre Sol, SC-405, nº 4397, Sala 208",
