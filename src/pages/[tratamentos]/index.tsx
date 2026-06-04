@@ -15,7 +15,8 @@ import SEO from "@/components/SEO";
 export default function Treatments() {
   return (
     <div>
-      <SEO keywords="tratamentos odontológicos, tratamento, odontologia, dentista, dentista especializada, sorriso bonito" />
+      <SEO canonicalPath="tratamentos"
+        keywords="tratamentos odontológicos, tratamento, odontologia, dentista, dentista especializada, sorriso bonito" />
       <Page className="flex flex-col items-center">
         <Header />
         <WhatsAppContact />

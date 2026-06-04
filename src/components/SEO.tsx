@@ -4,6 +4,7 @@ interface SeoProps {
   title?: string
   keywords?: string
   description?: string
+  canonicalPath?: string
 }
 
 export default function SEO(props: SeoProps) {
@@ -13,6 +14,7 @@ export default function SEO(props: SeoProps) {
       <meta name="description" content={props.description ?? "Clínica Anima Odontologia da Dra. Daniela Conte no Campeche - Florianópolis (Shopping Oka Floripa)."} />
       <meta name="keywords" content={props.keywords ?? "dentista campeche, dentista florianópolis, clínica odontológica florianópolis, prótese dentária, reabilitação oral, oka floripa, clínica anima odontologia, dentista especialista, dentista especializada"} />
       <meta name="robots" content="index, follow" />
+      <link rel="canonical" href={`https://www.dradanielaconte.com.br/${props.canonicalPath ?? ""}`} />
 
       {/* Open Graph / Redes Sociais */}
       <meta property="og:image" content="/images/perfil.jpg" />

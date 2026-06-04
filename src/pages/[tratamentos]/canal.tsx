@@ -11,7 +11,8 @@ import SEO from "@/components/SEO";
 export default function Canal() {
   return (
     <div>
-      <SEO title="Tratamento de Canal em Floripa | Anima Odontologia"
+      <SEO canonicalPath="tratamentos/canal"
+        title="Tratamento de Canal em Floripa | Anima Odontologia"
         keywords="tratamento de canal, tratamento de cáries, tratamento de infiltração dentária, dentista" />
       <Page>
         <WhatsAppContact />

@@ -11,7 +11,8 @@ import SEO from "@/components/SEO";
 export default function Zirconia() {
   return (
     <div>
-      <SEO title="Implantes de zircônia em Floripa | Anima Odontologia" 
+      <SEO canonicalPath="tratamentos/zirconia"
+        title="Implantes de zircônia em Floripa | Anima Odontologia" 
         keywords="implantes de zircônia, implante de zircônia, implante, dentista" />
       <Page>
         <WhatsAppContact />

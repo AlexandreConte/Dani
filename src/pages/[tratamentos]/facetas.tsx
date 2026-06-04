@@ -11,7 +11,8 @@ import SEO from "@/components/SEO";
 export default function Facetas() {
   return (
     <div>
-      <SEO title="Facetas de Porcelana em Floripa | Anima Odontologia"
+      <SEO canonicalPath="tratamentos/facetas" 
+        title="Facetas de Porcelana em Floripa | Anima Odontologia"
         keywords="facetas, faceta, lentes cerâmicas, lente cerâmica, dentista" />
       <Page>
         <WhatsAppContact />

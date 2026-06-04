@@ -12,7 +12,8 @@ import SEO from "@/components/SEO";
 export default function Botox() {
   return (
     <div>
-      <SEO title="Botox em Floripa | Anima Odontologia"
+      <SEO canonicalPath="tratamentos/botox"
+        title="Botox em Floripa | Anima Odontologia"
         keywords="botox, toxina botulínica, tratamento, linhas de expressão, dentista"
       />
       <Page>

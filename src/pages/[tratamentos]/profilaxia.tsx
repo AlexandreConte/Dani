@@ -12,7 +12,8 @@ import SEO from "@/components/SEO";
 export default function Profilaxia() {
   return (
     <div>
-      <SEO title="Limpeza Dental e Profilaxia em Floripa | Anima Odontologia"
+      <SEO canonicalPath="tratamentos/profilaxia" 
+        title="Limpeza Dental e Profilaxia em Floripa | Anima Odontologia"
         keywords="profilaxia, limpeza dentária, dentista"></SEO>
       <Page>
         <WhatsAppContact />
