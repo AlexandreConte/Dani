@@ -1,4 +1,4 @@
-import { IconDental, IconMapPinFilled } from "@tabler/icons-react"
+import { IconBook2, IconDental, IconMapPinFilled } from "@tabler/icons-react"
 import { NavItem } from "./NavItem"
 
 export interface NavProps {
@@ -19,7 +19,7 @@ export default function Navbar({ className }: NavProps) {
           Tratamentos
         </NavItem>
         <NavItem
-          icon={IconDental}
+          icon={IconBook2}
           link="/#sobre"
           className="hidden md:flex"
         >
