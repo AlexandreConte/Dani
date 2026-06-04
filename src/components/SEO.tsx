@@ -15,6 +15,7 @@ export default function SEO(props: SeoProps) {
       <meta name="robots" content="index, follow" />
 
       {/* Open Graph / Redes Sociais */}
+      <meta property="og:image" content="/images/perfil.jpg" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Anima Odontologia - Dentista em Florianópolis" />
       <meta property="og:description" content="Clínica Anima Odontologia no Shopping Oka Floripa, Campeche." />
@@ -42,6 +43,80 @@ export default function SEO(props: SeoProps) {
               "@type": "GeoCoordinates",
               "latitude": -27.7001686,
               "longitude": -48.5107231
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Florianópolis"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Serviços Odontológicos",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Prótese Dentária"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Estética Dental"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Reabilitação Oral"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Implante de zircônia"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Implante de titânio"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Botox"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Facetas de porcelana"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Limpeza dentária (Profilaxia)"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Harmonização facial"
+                  }
+                },
+                // Add more services here
+              ]
             }
           })
         }}
