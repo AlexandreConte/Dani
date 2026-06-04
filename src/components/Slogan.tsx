@@ -1,5 +1,5 @@
 import Image from "next/image";
-import icon from "../../public/favicon-white.svg";
+import icon from "@/../public/dental.svg";
 import background from "@/../public/images/backgrounds/dani-bg.jpg";
 
 export default function BackgroundImage() {
