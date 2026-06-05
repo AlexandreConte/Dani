@@ -2,20 +2,20 @@ import Image from "next/image";
 import icon from "@/../public/dental.svg";
 import background from "@/../public/images/backgrounds/dani-bg.jpg";
 
-export default function BackgroundImage() {
+export default function Slogan() {
   return (
     <div className={`
       w-full flex h-[400px] md:h-screen lg:h-screen
       justify-center items-center
-      bg-[#adadad92] z-10
+      bg-[#adadad92] z-0
     `}>
       <Image
         src={background}
         alt=""
         priority
-        className={`fixed top-0 left-0 max-w-full h-[400px] md:h-screen -z-20 object-cover translate-y-28`}
+        className={`fixed top-0 left-0 max-w-full h-[400px] md:h-screen -z-10 object-cover translate-y-28`}
       />
-      <div>
+      <div className="z-10">
         <h1 className="flex flex-col text-center text-white -translate-y-[120px] md:-translate-y-36 lg:-translate-y-10 xl:-translate-y-24">
           <span className="text-lg sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter">
             Conquiste o sorriso
