@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Page from "@/components/Shared/Page";
 import Image from "next/image";
-import ZirconiaETitanio from "@/../public/images/articles/zirconia_titanio.webp"
+import ZirconiaETitanio from "/images/articles/zirconia_titanio.webp"
 import WhatsAppContact from "@/components/WhatsAppContact";
 import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
@@ -11,7 +11,9 @@ import SEO from "@/components/SEO";
 export default function ZirconiaOuTitanio() {
   return (
     <div>
-      <SEO canonicalPath="tratamentos/zirconiaoutitanio" 
+      <SEO canonicalPath="tratamentos/zirconiaoutitanio"
+        article
+        headline="Implante de Zircônia e Implante de Titânio"
         title="Implante em Floripa | Anima Odontologia"
         keywords="implante, implante de zircônia, implante de titânio, dentista" />
       <Page>

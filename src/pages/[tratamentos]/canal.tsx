@@ -12,6 +12,8 @@ export default function Canal() {
   return (
     <div>
       <SEO canonicalPath="tratamentos/canal"
+        article
+        headline="Tratamento de canal | Infiltração | Cárie"
         title="Tratamento de Canal em Floripa | Anima Odontologia"
         keywords="tratamento de canal, tratamento de cáries, tratamento de infiltração dentária, dentista" />
       <Page>

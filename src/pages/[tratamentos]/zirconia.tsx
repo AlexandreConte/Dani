@@ -12,6 +12,8 @@ export default function Zirconia() {
   return (
     <div>
       <SEO canonicalPath="tratamentos/zirconia"
+        article
+        headline="Implante de Zircônia"
         title="Implantes de zircônia em Floripa | Anima Odontologia" 
         keywords="implantes de zircônia, implante de zircônia, implante, dentista" />
       <Page>

@@ -13,6 +13,8 @@ export default function Botox() {
   return (
     <div>
       <SEO canonicalPath="tratamentos/botox"
+        article
+        headline="Botox"
         title="Botox em Floripa | Anima Odontologia"
         keywords="botox, toxina botulínica, tratamento, linhas de expressão, dentista"
       />

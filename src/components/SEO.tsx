@@ -5,20 +5,27 @@ interface SeoProps {
   keywords?: string
   description?: string
   canonicalPath?: string
+  article?: boolean
+  headline?: string
+  image?: string
+  publishedTime?: string
 }
 
 export default function SEO(props: SeoProps) {
+  const defaultImageUrl = "/images/perfil.jpg"
+  const defaultDescription = "Clínica Anima Odontologia da Dra. Daniela Conte no Campeche - Florianópolis (Shopping Oka Floripa)."
+
   return (
     <Head>
       <title>{props.title ?? "Anima Odontologia | Dra. Daniela Conte - Florianópolis"}</title>
-      <meta name="description" content={props.description ?? "Clínica Anima Odontologia da Dra. Daniela Conte no Campeche - Florianópolis (Shopping Oka Floripa)."} />
+      <meta name="description" content={props.description ?? "Clínica Anima Odontologia | Dra. Daniela Conte | Campeche - Florianópolis (Shopping Oka Floripa)."} />
       <meta name="keywords" content={props.keywords ?? "dentista campeche, dentista florianópolis, clínica odontológica florianópolis, prótese dentária, reabilitação oral, oka floripa, clínica anima odontologia, dentista especialista, dentista especializada"} />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={`https://www.dradanielaconte.com.br/${props.canonicalPath ?? ""}`} />
 
       {/* Open Graph / Redes Sociais */}
-      <meta property="og:image" content="/images/perfil.jpg" />
-      <meta property="og:type" content="website" />
+      <meta property="og:image" content={defaultImageUrl} />
+      <meta property="og:type" content={props.article ? "article" : "website"} />
       <meta property="og:title" content="Anima Odontologia - Dentista em Florianópolis" />
       <meta property="og:description" content="Clínica Anima Odontologia no Shopping Oka Floripa, Campeche." />
       <meta property="og:site_name" content="Dra. Daniela Conte | Anima Odontologia" />
@@ -26,7 +33,28 @@ export default function SEO(props: SeoProps) {
       {/* Dados Estruturados de Negócio Local para o Google (JSON-LD) */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
+        dangerouslySetInnerHTML={props.article ? {
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": props.headline,
+            "author": {
+              "@type": "Person",
+              "name": "Dra. Daniela Conte"
+            },
+            "datePublished": props.publishedTime ?? new Date().toISOString(),
+            "image": [defaultImageUrl],
+            "publisher": {
+              "@type": "Organization",
+              "name": "Dra. Daniela Conte | Anima Odontologia",
+              // "logo": {
+              //   "@type": "ImageObject",
+              //   "url": "/logo.png"
+              // }
+            },
+            "description": props.description ?? defaultDescription
+          })
+        } : {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Dentist",
