@@ -24,7 +24,6 @@ export default function Home() {
         <main className="bg">
           <About />
           <Quote />
-          <Schedule />
           <Clinic />
           <Specializations />
           <Reviews />

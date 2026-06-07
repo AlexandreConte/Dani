@@ -37,13 +37,13 @@ const reviews = [
 export default function Reviews() {
   return (
     <div className="mt-[50px] mb-[25px] flex-col-center w-full h-auto">
-      <div className="bg-neutral-100 py-14 rounded-xl flex-col-center">
+      <div className="bg-neutral-100 py-14 rounded-xl flex-col-center px-3 mx-8">
         <div className="flex-col-center">
           <div>
             <Image alt="Google brand icon" src={googleLogo} width={100} />
           </div>
           <div className="flex-center flex-wrap gap-x-2 gap-y-8 mx-4 my-8">
-            <div className="text-black font-semibold">5,0</div>
+            <div className="text-zinc-700 font-semibold">5.0</div>
             <div className="flex-center">
               <IconStarFilled className="text-yellow-500" />
               <IconStarFilled className="text-yellow-500" />
@@ -51,10 +51,11 @@ export default function Reviews() {
               <IconStarFilled className="text-yellow-500" />
               <IconStarFilled className="text-yellow-500" />
             </div>
-            <div className="text-black flex-center text-center">50+ avaliações</div>
+            <div className="text-zinc-700 flex-center text-center font-semibold">50+</div>
           </div>
+          <p className="text-zinc-700 pb-8 pt-2 px-4 text-center">O que os clientes estão comentando...</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">{renderReviews()}</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">{renderReviews()}</div>
       </div>
     </div>
   );
@@ -65,7 +66,7 @@ function renderReviews() {
     <div key={review.name}>
       <SingleReview
         name={review.name}
-        comment={review.comment}
+        comment={review.comment.slice(0, 47)}
         link={review.link}
         avaliacao={5}
         imageSrc={review.imageSrc}

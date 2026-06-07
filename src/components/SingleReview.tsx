@@ -12,11 +12,11 @@ export interface SingleReviewProps {
 export default function SingleReview(props: SingleReviewProps) {
   return (
     <a
-      className={`flex flex-wrap max-w-[200px] h-[200px] mx-6`}
+      className={`flex flex-wrap max-w-[200px] h-[200px] mx-2 shadow hover:shadow-lg active:shadow-lg rounded-lg transition-shadow`}
       href={props.link}
       target="_blank"
     >
-      <div className="flex-col-center flex-wrap gap-3">
+      <div className="flex-col-center flex-wrap">
         <Image
           alt={`Foto de perfil`}
           src={props.imageSrc}
@@ -24,10 +24,10 @@ export default function SingleReview(props: SingleReviewProps) {
           width={120}
           height={120}
         />
-        <div className="text-base text-black font-bold text-center">
+        <div className="text-base text-zinc-700 font-bold text-center mt-1">
           {props.name}
         </div>
-        <div className="text-black text-center text-sm">{props.comment}</div>
+        <div className="text-zinc-500 text-center text-sm pt-2">{props.comment}...</div>
       </div>
     </a>
   );

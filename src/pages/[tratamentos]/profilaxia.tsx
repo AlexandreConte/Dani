@@ -6,8 +6,7 @@ import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import SEO from "@/components/SEO";
-// import cariesImg from "@/../public/images/articles/caries.webp"
-//TODO: Adicionar imagem de profilaxia
+// import cariesImg from "@/../public/images/articles/caries.webp" TODO: Adicionar imagem de profilaxia
 
 export default function Profilaxia() {
   return (

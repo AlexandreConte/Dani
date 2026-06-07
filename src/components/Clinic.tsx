@@ -11,22 +11,22 @@ interface ClinicProps {
 export default function Clinic({ className }: ClinicProps) {
   return (
     <div className={`flex-col-center pt-[50px] pb-[25px] ${className ?? ""}`}>
-      <span className="text-white text-2xl mb-10 font-semibold">A clínica</span>
+      {/* <span className="text-white text-2xl mb-10 font-semibold">A clínica</span> */}
       <Area className="
         flex justify-center flex-col lg:flex-row gap-x-4
-        w-full max-w-[1440px] h-full
-        px-4 gap-y-8
+        w-full h-full
+        gap-y-8 mx-8
     ">
-        <Slider direction="left" className="flex items-center">
+        <Slider direction="left" className="flex items-center justify-center mx-4">
           <Image
-            className="max-h-[80vh] w-full object-cover"
+            className="object-contain lg:max-w-max lg:max-h-[480px] max-[1024px]:w-[320px]"
             src={backgroundImage}
             alt="Dentista sorrindo sentada em seu consultório com uma agenda na mesa."
           />
         </Slider>
-        <Slider direction="right" className="flex justify-center items-center">
+        <Slider direction="right" className="flex items-center justify-center mx-4">
           <Image
-            className="max-h-[80vh] w-full object-cover lg:h-full"
+            className="object-contain lg:max-w-max lg:max-h-[480px] max-[1024px]:w-[320px] lg:w-full"
             src={backgroundImage2}
             alt="Consultório da Dentista em Santa Catarina, Florianópolis - Campeche"
           />

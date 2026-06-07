@@ -10,14 +10,7 @@ export default function Navbar({ className }: NavProps) {
     <nav className={`
       ${className ?? ""}
     `}>
-      <ul className="flex justify-between items-center list-none gap-x-2 md:gap-x-4">
-        <NavItem
-          icon={IconDental}
-          link="/tratamentos"
-          className="hidden min-[425px]:flex"
-        >
-          Tratamentos
-        </NavItem>
+      <ul className="flex justify-between items-center list-none gap-x-1 lg:gap-x-2">
         <NavItem
           icon={IconBook2}
           link="/#sobre"
@@ -25,10 +18,18 @@ export default function Navbar({ className }: NavProps) {
         >
           Sobre
         </NavItem>
+
+        <NavItem
+          icon={IconDental}
+          link="/tratamentos"
+          className="hidden min-[425px]:flex"
+        >
+          Tratamentos
+        </NavItem>
+
         <NavItem
           icon={IconMapPinFilled}
           link="#endereco"
-          ariaLabel="Localização no Google Maps."
           className="hidden sm:flex"
         >
           Endereço

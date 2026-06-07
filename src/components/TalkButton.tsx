@@ -15,13 +15,15 @@ export default function TalkButton({ className }: TalkButtonProps) {
     `}>
       <div className="
         flex-center gap-2
-        text-white
-        w-full
+        w-full mb-4
+        bg-[#2D4F40] px-8 py-2 rounded-lg shadow-lg
+        hover:scale-105 active:scale-105 transition-transform 
+        hover:shadow-xl active:shadow-xl
       ">
-        <span className="flex-center text-center text-white">
-          <IconBrandWhatsapp strokeWidth={1.5} color="#2D4F40" size={30} />
+        <span className="flex-center text-center">
+          <IconBrandWhatsapp strokeWidth={1.5} color="#d4d4d8" size={30} />
         </span>
-        <span className="flex-center text-center font-normal text-lg md:text-xl text-[#2D4F40]">
+        <span className="flex-center text-center font-normal text-zinc-300">
           Entrar em contato
         </span>
       </div>

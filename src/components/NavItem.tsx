@@ -8,22 +8,17 @@ interface NavItemProps {
   icon: ElementType
   target?: "_blank"
   textHidden?: boolean
-  ariaLabel?: string
 }
 
 export function NavItem(props: NavItemProps) {
   const hidden = props.textHidden ? "hidden" : "flex"
 
   return (
-    <li className="sm:text-lg lg:text-xl">
+    <li className="text-base lg:text-lg">
       <Link href={props.link}
         target={props.target ?? "_self"}
-        aria-label={props.ariaLabel ?? ""}
         className={`
-          hover:border-[#2D4F40]
-          flex
-          lg:mx-1
-          sm:mx-3
+          flex lg:mx-1 sm:mx-3
           ${props.className ?? ""}
         `}
       >

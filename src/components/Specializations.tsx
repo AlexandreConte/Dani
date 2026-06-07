@@ -42,8 +42,8 @@ const specializations = [
 
 function renderSpecializations() {
   return specializations.map((it) => (
-    <Link href={it.link} key={`${it.id}`}>
-      <SpecialItem >{it.specialization}</SpecialItem>
+    <Link href={it.link} key={`${it.id}`} className="p-2">
+      <SpecialItem className="bg-neutral-100 text-zinc-700 border-zinc-300">{it.specialization}</SpecialItem>
     </Link>
   ))
 }
@@ -51,15 +51,20 @@ function renderSpecializations() {
 export default function Specializations() {
   return (
     <div>
-      <h3 className="text-center pt-8 text-white text-2xl font-semibold">Tratamentos</h3>
-      <AreaWithMarginX className="pt-[50px] pb-[25px] gap-y-[25px] w-full">
+      {/* <h3 className="text-center mt-4 px-20 min-[425px]:w-[280px] lg:w-[588px] text-[#2d4f40] text-base lg:text-lg font-semibold rounded-sm bg-white">Tratamentos</h3> */}
+      <AreaWithMarginX className="pb-6 w-full">
         <div className="
-          gap-[30px]
-          grid grid-flow-row grid-cols-3
+          gap-[20px]
+          grid grid-flow-row lg:grid-cols-4 min-[425px]:grid-cols-2
         ">
           {renderSpecializations()}
         </div>
       </AreaWithMarginX>
+      <div className="w-full flex items-center justify-center text-center">
+        <Link href="/tratamentos">
+          <SpecialItem className="lg:w-[588px] min-[425px]:w-[280px] bg-[#2d4f40] text-zinc-300 border-zinc-400 hover:border-zinc-300 active:border-zinc-300">Ver mais tratamentos...</SpecialItem>
+        </Link>
+      </div>
     </div>
   )
 }
