@@ -21,13 +21,6 @@ export default function ZirconiaOuTitanio() {
         <Header />
         <Area>
           <main className="container mx-auto px-4 py-12 md:py-20 max-w-4xl">
-            <div className="flex justify-center gap-2 mb-12 flex-wrap">
-              <Link href={"/"}>Início</Link>
-              &gt;
-              <Link href={"/tratamentos"}>Tratamentos</Link>
-              &gt;
-              <Link href={"/tratamentos/zirconiaoutitanio"} className="underline">Implante de Titânio ou Implante de Zircônia</Link>
-            </div>
             <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 text-white">
               Implante de Titânio versus implante de Zircônia
             </h1>

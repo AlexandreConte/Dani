@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { IconBrandInstagram } from "@tabler/icons-react";
-import Area from "@/components/Shared/Area";
 import styles from "../styles/Logo.module.css"
 
 export interface ProfessionalCardProps {

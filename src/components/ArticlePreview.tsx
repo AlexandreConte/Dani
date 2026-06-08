@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ArticlePreviwProps {
-  image: StaticImport
+  image?: StaticImport
   alt: string
   title: string
   link: string
@@ -23,7 +23,7 @@ export default function ArticlePreview(props: ArticlePreviwProps) {
         {props.title}
       </h2>
       <div className="flex justify-center items-center">
-        <Image alt={props.alt} src={props.image} width={1000} height={1000} className="w-[130px] h-[150px] object-cover rounded-md" />
+        {props.image && <Image alt={props.alt} src={props.image} width={1000} height={1000} className="w-[130px] h-[150px] object-cover rounded-md" />}
       </div>
       <span className="text-center mt-2 text-[#cb8157]">Ler Mais</span>
     </Link >

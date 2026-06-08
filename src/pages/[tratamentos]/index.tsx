@@ -2,12 +2,10 @@ import Header from "@/components/Header";
 import Page from "@/components/Shared/Page";
 import WhatsAppContact from "@/components/WhatsAppContact";
 import ArticlePreview from "@/components/ArticlePreview";
-import Link from "next/link";
 import Footer from "@/components/Footer";
 import zirconiaImg from "@/../public/images/articles/zirconia-1.webp"
 import zirconiaTitanio from "@/../public/images/articles/zirconia_titanio.webp"
 import cariesInfiltracoes from "@/../public/images/articles/caries.webp"
-// import profilaxia from "@/../public/images/articles/profilaxia.webp" //TODO: AJUSTAR IMAGEM DE PROFILAXIA
 import botox from "@/../public/images/articles/botox.webp"
 import facetas from "@/../public/images/articles/facetas-lentes-ceramica.webp"
 import SEO from "@/components/SEO";
@@ -54,7 +52,7 @@ export default function Treatments() {
               <ArticlePreview
                 link="tratamentos/facetas"
                 alt="Facetas (lentes cerâmicas)"
-                title="Facetas / Lentes Cerâmicas"
+                title="Facetas: Lentes Cerâmicas"
                 image={facetas}
               />
 
@@ -63,6 +61,12 @@ export default function Treatments() {
                 alt="Cáries e infiltrações dentárias"
                 image={cariesInfiltracoes}
                 title="Tratamento de Canal"
+              />
+
+              <ArticlePreview
+                link="tratamentos/profilaxia"
+                alt="Limpeza Dental"
+                title="Limpeza: Profilaxia"
               />
 
             </div>

@@ -1,6 +1,6 @@
 import ProfessionalCard from "./ProfessionalCard";
 import Slider from "@/components/Shared/Slider";
-import profileImage from "@/../public/images/perfil.jpg";
+import profileImage from "@/../public/images/perfil.webp";
 
 export default function About() {
   return (

@@ -1,5 +1,5 @@
-import backgroundImage from "@/../public/images/backgrounds/dani-bg2.jpg"
-import backgroundImage2 from "@/../public/images/backgrounds/consultorio-bg.jpeg"
+import backgroundImage from "@/../public/images/backgrounds/dani-bg2.webp"
+import backgroundImage2 from "@/../public/images/backgrounds/consultorio-bg.webp"
 import Image from "next/image"
 import Slider from "@/components/Shared/Slider"
 import Area from "@/components/Shared/Area"

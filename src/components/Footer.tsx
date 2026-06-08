@@ -4,7 +4,6 @@ import Logo from "@/styles/Logo.module.css"
 import Area from "./Shared/Area";
 
 export default function Footer() {
-  //TODO:Ajustar footer
   return (
     <div className="w-screen bg-[#2D4F40]">
       <Area>
@@ -49,7 +48,7 @@ export default function Footer() {
           </div>
           <div className="w-full">
             <div className="max-w-[1250px] flex justify-center items-center pt-20 px-12 mx-auto">
-              <div className="flex items-center md:justify-between flex-wrap w-full max-[880px]:justify-center gap-4">
+              <div className="flex items-center lg:justify-between flex-wrap w-full max-lg:justify-center gap-4">
                 <span className="px-4 text-center">{new Date().getFullYear()} Todos os direitos reservados - Anima Odontologia</span>
                 <span className={`${Logo.logo} text-2xl text-nowrap text-center px-4`}>Dra Daniela Conte</span>
               </div>
