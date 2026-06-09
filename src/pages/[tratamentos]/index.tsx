@@ -63,11 +63,11 @@ export default function Treatments() {
                 title="Tratamento de Canal"
               />
 
-              <ArticlePreview
+              {/* <ArticlePreview
                 link="tratamentos/profilaxia"
                 alt="Limpeza Dental"
                 title="Limpeza: Profilaxia"
-              />
+              /> */}
 
             </div>
           </div>
