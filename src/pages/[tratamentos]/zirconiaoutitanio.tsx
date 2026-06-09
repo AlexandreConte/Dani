@@ -5,7 +5,6 @@ import ZirconiaETitanio from "@/../public/images/articles/zirconia_titanio.webp"
 import WhatsAppContact from "@/components/WhatsAppContact";
 import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 import SEO from "@/components/SEO";
 
 export default function ZirconiaOuTitanio() {

@@ -4,9 +4,8 @@ import Image from "next/image";
 import WhatsAppContact from "@/components/WhatsAppContact";
 import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 import SEO from "@/components/SEO";
-// import cariesImg from "@/../public/images/articles/caries.webp" TODO: Adicionar imagem de profilaxia
+// import profilaxia from "@/../public/images/articles/profilaxia.webp" TODO: Adicionar imagem de profilaxia
 
 export default function Profilaxia() {
   return (

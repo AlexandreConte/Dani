@@ -5,7 +5,6 @@ import zirconia1 from "@/../public/images/articles/zirconia-1.webp"
 import zirconia2 from "@/../public/images/articles/zirconia-2.webp"
 import WhatsAppContact from "@/components/WhatsAppContact";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 import SEO from "@/components/SEO";
 
 export default function Zirconia() {

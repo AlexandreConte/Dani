@@ -4,7 +4,6 @@ import Image from "next/image";
 import WhatsAppContact from "@/components/WhatsAppContact";
 import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 import facetas from "@/../public/images/articles/facetas-lentes-ceramica.webp"
 import SEO from "@/components/SEO";
 

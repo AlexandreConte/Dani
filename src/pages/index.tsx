@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Header from '@/components/Header'
 import Page from '@/components/Shared/Page'
 import WhatsAppContact from '@/components/WhatsAppContact'
@@ -9,7 +8,6 @@ import Specializations from '@/components/Specializations'
 import Reviews from '@/components/Reviews'
 import Contact from '@/components/Contact'
 import Slogan from '@/components/Slogan'
-import Schedule from '@/components/Schedule'
 import Footer from '@/components/Footer'
 import SEO from '@/components/SEO'
 
