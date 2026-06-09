@@ -6,17 +6,17 @@ const specializations = [
   // {
   //   id: 0,
   //   specialization: "Prótese",
-  //   link: "/tratamentos/" // TODO: AJUSTAR LINK!
+  //   link: "/tratamentos/protese" // TODO: AJUSTAR LINK!
   // },
   // {
   //   id: 1,
   //   specialization: "Harmonização",
-  //   link: "/tratamentos/" // ajustar link
+  //   link: "/tratamentos/harmonizacao" // ajustar link
   // },
   // {
   //   id: 2,
   //   specialization: "Clareamento",
-  //   link: "/tratamentos/" // ajustar link
+  //   link: "/tratamentos/clareamento" // ajustar link
   // },
   {
     id: 3,
