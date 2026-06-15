@@ -18,25 +18,30 @@ const specializations = [
   //   specialization: "Clareamento",
   //   link: "/tratamentos/clareamento" // ajustar link
   // },
-  {
-    id: 3,
-    specialization: "Profilaxia",
-    link: "/tratamentos/profilaxia"
-  },
+  // {
+  //   id: 3,
+  //   specialization: "Profilaxia",
+  //   link: "/tratamentos/profilaxia"
+  // },
   {
     id: 4,
     specialization: "Implante",
-    link: "/tratamentos/zirconiaoutitanio"
+    link: "/tratamentos/zirconia-ou-titanio"
   },
   {
     id: 5,
     specialization: "Botox",
-    link: "/tratamentos/botox" // ajustar link
+    link: "/tratamentos/toxina-botulinica"
   },
   {
     id: 6,
-    specialization: "Facetas",
-    link: "/tratamentos/facetas" // ajustar link
+    specialization: "Faceta",
+    link: "/tratamentos/facetas"
+  },
+  {
+    id: 6,
+    specialization: "Prótese",
+    link: "/tratamentos/protese-tipo-protocolo"
   },
 ]
 

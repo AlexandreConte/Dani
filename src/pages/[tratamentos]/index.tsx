@@ -1,23 +1,26 @@
 import Header from "@/components/Header";
 import Page from "@/components/Shared/Page";
-import WhatsAppContact from "@/components/WhatsAppContact";
 import ArticlePreview from "@/components/ArticlePreview";
 import Footer from "@/components/Footer";
-import zirconiaImg from "@/../public/images/articles/zirconia-1.webp"
-import zirconiaTitanio from "@/../public/images/articles/zirconia_titanio.webp"
-import cariesInfiltracoes from "@/../public/images/articles/caries.webp"
-import botox from "@/../public/images/articles/botox.webp"
-import facetas from "@/../public/images/articles/facetas-lentes-ceramica.webp"
 import SEO from "@/components/SEO";
+import zirconiaImg from "@/../public/images/articles/zirconia/zirconia-1.webp";
+import zirconiaTitanio from "@/../public/images/articles/zirconia-ou-titanio/zirconia_titanio.webp";
+import botox from "@/../public/images/articles/toxina-botulinica/botox.webp";
+import facetas from "@/../public/images/articles/facetas/facetas-lentes-ceramica.webp";
+import denteQuebrado from "@/../public/images/articles/dente-quebrado/dente-quebrado.webp";
+import proteseProtocolo from "@/../public/images/articles/protese-tipo-protocolo/protese-protocolo-2.webp";
+import FixedMenu from "@/components/FixedMenu";
 
 export default function Treatments() {
   return (
     <div>
-      <SEO canonicalPath="tratamentos"
-        keywords="tratamentos odontológicos, tratamento, odontologia, dentista, dentista especializada, sorriso bonito" />
+      <SEO
+        canonicalPath="tratamentos"
+        keywords="tratamentos odontológicos, tratamento, odontologia, dentista, dentista especializada, sorriso bonito"
+      />
       <Page className="flex flex-col items-center">
         <Header />
-        <WhatsAppContact />
+        <FixedMenu isTreatmentPage />
         <main className="container px-4 flex flex-col items-center">
           <div className="flex flex-col items-center mb-12">
             <div className="bg-[#2D4F40] w-screen py-12">
@@ -36,31 +39,38 @@ export default function Treatments() {
               />
 
               <ArticlePreview
-                link="tratamentos/zirconiaoutitanio"
+                link="tratamentos/zirconia-ou-titanio"
                 alt="Implante de Zircônia ou de titânio"
                 image={zirconiaTitanio}
-                title="Comparação entre Implantes"
+                title="Titânio e Zircônia"
               />
 
               <ArticlePreview
-                link="tratamentos/botox"
-                alt="Botox"
+                link="tratamentos/toxina-botulinica"
+                alt="Toxina Botulínica"
                 image={botox}
-                title="Botox"
+                title="Toxina Botulínica"
               />
 
               <ArticlePreview
                 link="tratamentos/facetas"
-                alt="Facetas (lentes cerâmicas)"
-                title="Facetas: Lentes Cerâmicas"
+                alt="Facetas e lentes"
+                title="Facetas e Lentes"
                 image={facetas}
               />
 
               <ArticlePreview
-                link="tratamentos/canal"
-                alt="Cáries e infiltrações dentárias"
-                image={cariesInfiltracoes}
-                title="Tratamento de Canal"
+                link="tratamentos/dente-quebrado"
+                alt="Meu dente quebrou, e agora?"
+                image={denteQuebrado}
+                title="Meu dente quebrou, e agora?"
+              />
+
+              <ArticlePreview
+                link="tratamentos/protese-tipo-protocolo"
+                alt="Prótese tipo Protocolo"
+                image={proteseProtocolo}
+                title="Prótese Tipo Protocolo"
               />
 
               {/* <ArticlePreview
@@ -68,12 +78,11 @@ export default function Treatments() {
                 alt="Limpeza Dental"
                 title="Limpeza: Profilaxia"
               /> */}
-
             </div>
           </div>
         </main>
         <Footer />
       </Page>
     </div>
-  )
+  );
 }

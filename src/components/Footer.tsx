@@ -1,6 +1,10 @@
-import { IconBrandInstagram, IconBrandWhatsapp, IconCalendar } from "@tabler/icons-react";
+import {
+  IconBrandInstagram,
+  IconBrandWhatsapp,
+  IconCalendar,
+} from "@tabler/icons-react";
 import Adress from "./Address";
-import Logo from "@/styles/Logo.module.css"
+import Logo from "@/styles/Logo.module.css";
 import Area from "./Shared/Area";
 
 export default function Footer() {
@@ -19,7 +23,8 @@ export default function Footer() {
                 Contato
               </span>
               <div className="flex gap-4 justify-center items-center max-[500px]:flex-col text-[#2D4F40] font-semibold">
-                <a rel="noopener noreferrer"
+                <a
+                  rel="noopener noreferrer"
                   className="flex justify-center gap-1 bg px-4 w-[164px] py-2 rounded-md border border-zinc-500 shadow-lg hover:scale-105 active:scale-105 transition-transform"
                   target="_blank"
                   href="https://wa.me/5548999299977"
@@ -27,7 +32,8 @@ export default function Footer() {
                   <IconBrandWhatsapp stroke={2} />
                   Whatsapp
                 </a>
-                <a rel="noopener noreferrer"
+                <a
+                  rel="noopener noreferrer"
                   className="flex justify-center gap-1 bg px-4 w-[164px] py-2 rounded-md border border-zinc-500 shadow-lg hover:scale-105 active:scale-105 transition-transform"
                   target="_blank"
                   href="https://agenda.link/679111"
@@ -35,7 +41,8 @@ export default function Footer() {
                   <IconCalendar stroke={2} />
                   Agendar
                 </a>
-                <a rel="noopener noreferrer"
+                <a
+                  rel="noopener noreferrer"
                   className="flex justify-center gap-1 bg px-4 w-[164px] py-2 rounded-md border border-zinc-500 shadow-lg hover:scale-105 active:scale-105 transition-transform"
                   target="_blank"
                   href="https://www.instagram.com/dradaniconte/"
@@ -49,13 +56,22 @@ export default function Footer() {
           <div className="w-full">
             <div className="max-w-[1250px] flex justify-center items-center pt-20 px-12 mx-auto">
               <div className="flex items-center lg:justify-between flex-wrap w-full max-lg:justify-center gap-4">
-                <span className="px-4 text-center">{new Date().getFullYear()} Todos os direitos reservados - Anima Odontologia</span>
-                <span className={`${Logo.logo} text-2xl text-nowrap text-center px-4`}>Dra Daniela Conte</span>
+                <span className="px-4 text-center">
+                  {new Date().getFullYear()} Todos os direitos reservados -
+                  Anima Odontologia
+                </span>
+                <a href="/">
+                  <span
+                    className={`${Logo.logo} text-2xl text-nowrap text-center px-4`}
+                  >
+                    Dra Daniela Conte
+                  </span>
+                </a>
               </div>
             </div>
           </div>
         </footer>
       </Area>
     </div>
-  )
+  );
 }
