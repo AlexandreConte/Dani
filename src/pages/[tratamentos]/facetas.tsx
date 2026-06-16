@@ -28,7 +28,7 @@ export default function Facetas() {
               </h1>
             </div>
             <div className="mx-6">
-              <div className="bg-white md:p-10 rounded-3xl shadow-sm border border-zinc-100 mb-12 flex flex-col justify-center gap-8 items-center w-full">
+              <div className="bg-white md:p-10 rounded-3xl p-6 shadow-sm border border-zinc-100 mb-12 flex flex-col justify-center gap-8 items-center w-full">
                 <p className="text-lg text-zinc-600 leading-relaxed space-y-4">
                   As facetas dentárias também conhecidas como lentes de contato
                   dental ou laminados são uma excelente opção para pacientes que
