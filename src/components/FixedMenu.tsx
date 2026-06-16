@@ -1,3 +1,4 @@
+import NavigateUp from "./NavigateUp";
 import Navigation from "./Navigation";
 import WhatsAppContact from "./WhatsAppContact";
 
@@ -10,11 +11,13 @@ export default function FixedMenu(props: FixedMenuProps) {
     <>
       <WhatsAppContact />
       <Navigation to="HOME" />
+      <NavigateUp />
     </>
   ) : (
     <>
       <WhatsAppContact />
       <Navigation to="TREATMENT" />
+      <NavigateUp />
     </>
   );
 }
