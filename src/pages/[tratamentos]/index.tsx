@@ -3,13 +3,14 @@ import Page from "@/components/Shared/Page";
 import ArticlePreview from "@/components/ArticlePreview";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import FixedMenu from "@/components/FixedMenu";
 import zirconiaImg from "@/../public/images/articles/zirconia/zirconia-1.webp";
 import zirconiaTitanio from "@/../public/images/articles/zirconia-ou-titanio/zirconia_titanio.webp";
 import botox from "@/../public/images/articles/toxina-botulinica/botox.webp";
 import facetas from "@/../public/images/articles/facetas/facetas-lentes-ceramica.webp";
 import denteQuebrado from "@/../public/images/articles/dente-quebrado/dente-quebrado.webp";
 import proteseProtocolo from "@/../public/images/articles/protese-tipo-protocolo/protese-protocolo-2.webp";
-import FixedMenu from "@/components/FixedMenu";
+import clareamento from "@/../public/images/articles/clareamento/clareamento.webp"
 
 export default function Treatments() {
   return (
@@ -55,8 +56,8 @@ export default function Treatments() {
               <ArticlePreview
                 link="tratamentos/facetas"
                 alt="Facetas e lentes"
-                title="Facetas e Lentes"
                 image={facetas}
+                title="Facetas e Lentes"
               />
 
               <ArticlePreview
@@ -73,11 +74,12 @@ export default function Treatments() {
                 title="Prótese Tipo Protocolo"
               />
 
-              {/* <ArticlePreview
-                link="tratamentos/profilaxia"
-                alt="Limpeza Dental"
-                title="Limpeza: Profilaxia"
-              /> */}
+              <ArticlePreview
+                link="tratamentos/clareamento"
+                alt="Clareamento dental"
+                image={clareamento}
+                title="Clareamento Dental"
+              />
             </div>
           </div>
         </main>

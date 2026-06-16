@@ -3,7 +3,7 @@
   <!-- Home -->
   <url>
     <loc>https://dradanielaconte.com.br/</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- Página Geral de Tratamentos -->
   <url>
     <loc>https://dradanielaconte.com.br/tratamentos</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -19,37 +19,43 @@
   <!-- Tratamentos Específicos -->
   <url>
     <loc>https://dradanielaconte.com.br/tratamentos/zirconia</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dradanielaconte.com.br/tratamentos/zirconia-ou-titanio</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
     <url>
     <loc>https://dradanielaconte.com.br/tratamentos/toxina-botulinica</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
     <url>
     <loc>https://dradanielaconte.com.br/tratamentos/facetas</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dradanielaconte.com.br/tratamentos/dente-quebrado</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dradanielaconte.com.br/tratamentos/protese-tipo-protocolo</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dradanielaconte.com.br/tratamentos/clareamento</loc>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
