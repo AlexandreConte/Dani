@@ -124,7 +124,7 @@ export default function SEO(props: SeoProps) {
                         "@type": "Offer",
                         itemOffered: {
                           "@type": "Service",
-                          name: "Prótese Dentária",
+                          name: "Prótese tipo protocolo",
                         },
                       },
                       {
@@ -159,21 +159,21 @@ export default function SEO(props: SeoProps) {
                         "@type": "Offer",
                         itemOffered: {
                           "@type": "Service",
-                          name: "Botox",
+                          name: "Toxina Botulínica",
                         },
                       },
                       {
                         "@type": "Offer",
                         itemOffered: {
                           "@type": "Service",
-                          name: "Facetas de porcelana",
+                          name: "Facetas e lentes",
                         },
                       },
                       {
                         "@type": "Offer",
                         itemOffered: {
                           "@type": "Service",
-                          name: "Limpeza dentária (Profilaxia)",
+                          name: "Profilaxia",
                         },
                       },
                       {
@@ -181,6 +181,13 @@ export default function SEO(props: SeoProps) {
                         itemOffered: {
                           "@type": "Service",
                           name: "Harmonização facial",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Clareamento dental",
                         },
                       },
                       // Add more services here
