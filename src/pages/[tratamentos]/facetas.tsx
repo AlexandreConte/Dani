@@ -288,19 +288,12 @@ export default function Facetas() {
                     alt="Resultado antes e depois: Facetas cerâmicas"
                     src={facetas}
                   />
-                  <span className="text-center">
-                    Resultado obtido após tratamento com facetas em cerâmica
-                  </span>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4">
                   <Image
                     alt="Resultado antes e depois: Facetas Cerâmicas"
                     src={facetasCeramicas}
                   />
-                  <span className="text-center">
-                    Resultado obtido após tratamento com facetas em cerâmica e
-                    recontorno gengival estético
-                  </span>
                 </div>
               </div>
               {/* Seção: Nosso Objetivo */}
