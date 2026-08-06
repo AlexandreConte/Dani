@@ -33,49 +33,49 @@ export default function Treatments() {
             {/* LISTA DE TRATAMENTOS */}
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4 px-2 sm:px-4 md:px-8">
               <ArticlePreview
-                link="tratamentos/zirconia"
+                link="/tratamentos/zirconia"
                 alt="Implante de Zircônia"
                 image={zirconiaImg}
                 title="Implantes de Zircônia"
               />
 
               <ArticlePreview
-                link="tratamentos/zirconia-ou-titanio"
+                link="/tratamentos/zirconia-ou-titanio"
                 alt="Implante de Zircônia ou de titânio"
                 image={zirconiaTitanio}
                 title="Titânio e Zircônia"
               />
 
               <ArticlePreview
-                link="tratamentos/toxina-botulinica"
+                link="/tratamentos/toxina-botulinica"
                 alt="Toxina Botulínica"
                 image={botox}
                 title="Toxina Botulínica"
               />
 
               <ArticlePreview
-                link="tratamentos/facetas"
+                link="/tratamentos/facetas"
                 alt="Facetas e lentes"
                 image={facetas}
                 title="Facetas e Lentes"
               />
 
               <ArticlePreview
-                link="tratamentos/dente-quebrado"
+                link="/tratamentos/dente-quebrado"
                 alt="Meu dente quebrou, e agora?"
                 image={denteQuebrado}
                 title="Meu dente quebrou, e agora?"
               />
 
               <ArticlePreview
-                link="tratamentos/protese-tipo-protocolo"
+                link="/tratamentos/protese-tipo-protocolo"
                 alt="Prótese tipo Protocolo"
                 image={proteseProtocolo}
                 title="Prótese Tipo Protocolo"
               />
 
               <ArticlePreview
-                link="tratamentos/clareamento"
+                link="/tratamentos/clareamento"
                 alt="Clareamento dental"
                 image={clareamento}
                 title="Clareamento Dental"
