@@ -39,7 +39,7 @@ const specializations = [
     link: "/tratamentos/facetas"
   },
   {
-    id: 6,
+    id: 7,
     specialization: "Prótese",
     link: "/tratamentos/protese-tipo-protocolo"
   },

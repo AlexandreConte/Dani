@@ -45,7 +45,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex justify-center gap-1 bg px-4 w-[164px] py-2 rounded-md border border-zinc-500 shadow-lg hover:scale-105 active:scale-105 transition-transform"
                   target="_blank"
-                  href="https://www.instagram.com/dradaniconte/"
+                  href="https://www.instagram.com/dradanicontee/"
                 >
                   <IconBrandInstagram stroke={2} />
                   Instagram

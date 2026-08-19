@@ -12,7 +12,7 @@ export default function About() {
           <ProfessionalCard
             name={"Dra. Daniela Conte"}
             image={profileImage}
-            instaUrl={"https://www.instagram.com/dradaniconte/"}
+            instaUrl={"https://www.instagram.com/dradanicontee/"}
             local="Clínica Odontológica em Florianópolis, Campeche - Santa Catarina"
           />
         </div>
