@@ -12,7 +12,9 @@ interface SeoProps {
 }
 
 export default function SEO(props: SeoProps) {
-  const defaultImageUrl = "/images/perfil.jpg";
+  const siteUrl = "https://www.dradanielaconte.com.br";
+  const defaultImageUrl = `${siteUrl}/images/perfil.webp`;
+
   const defaultDescription =
     "Clínica Anima Odontologia da Dra. Daniela Conte no Campeche - Florianópolis (Shopping Oka Floripa).";
 
@@ -43,8 +45,12 @@ export default function SEO(props: SeoProps) {
         href={`https://www.dradanielaconte.com.br/${props.canonicalPath ?? ""}`}
       />
 
-      {/* Open Graph / Redes Sociais */}
-      <meta property="og:image" content={defaultImageUrl} />
+      {/* Open Graph / Redes Sociais  PARA USO FUTURO */}
+      {/* <meta property="og:image" content={defaultImageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content="image/webp" /> */}
+
       <meta
         property="og:type"
         content={props.article ? "article" : "website"}
@@ -82,10 +88,6 @@ export default function SEO(props: SeoProps) {
                   publisher: {
                     "@type": "Organization",
                     name: "Dra. Daniela Conte | Anima Odontologia",
-                    // "logo": {
-                    //   "@type": "ImageObject",
-                    //   "url": "/logo.png"
-                    // }
                   },
                   description: props.description ?? defaultDescription,
                 }),
@@ -109,8 +111,8 @@ export default function SEO(props: SeoProps) {
                   },
                   geo: {
                     "@type": "GeoCoordinates",
-                    latitude: -27.7001686,
-                    longitude: -48.5107231,
+                    latitude: -27.699724,
+                    longitude: -48.510780,
                   },
                   areaServed: {
                     "@type": "City",
