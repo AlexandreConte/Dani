@@ -1,4 +1,5 @@
 import { IconDental, IconHome } from "@tabler/icons-react";
+import Link from "next/link";
 
 interface NavigationProps {
   to: "HOME" | "TREATMENT";
@@ -10,12 +11,12 @@ export default function Navigation(props: NavigationProps) {
       bg-white rounded-full z-50 shadow-md`;
 
   return props.to === "TREATMENT" ? (
-    <a href="/tratamentos" className={className}>
+    <Link href="/tratamentos" className={className}>
       <IconDental size={35} stroke={1.5} color="#000" />
-    </a>
+    </Link>
   ) : (
-    <a href="/" className={className}>
+    <Link href="/" className={className}>
       <IconHome size={35} stroke={1.5} color="#000" />
-    </a>
+    </Link>
   );
 }

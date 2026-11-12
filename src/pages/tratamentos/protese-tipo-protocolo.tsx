@@ -6,7 +6,6 @@ import proteseProtocolo2 from "@/../public/images/articles/protese-tipo-protocol
 import proteseProtocolo3 from "@/../public/images/articles/protese-tipo-protocolo/protese-protocolo-2.webp";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import FixedMenu from "@/components/FixedMenu";
 
 export default function ProteseTipoProtocolo() {
   return (
@@ -19,7 +18,6 @@ export default function ProteseTipoProtocolo() {
         keywords="prótese protocolo, protocolo de brânemark, implantes dentários fixos, dentadura fixa, dentista"
       />
       <Page className="flex flex-col items-center">
-        <FixedMenu />
         <Header />
         <main className="flex flex-col items-center max-w-4xl">
           <div className="flex flex-col items-center mb-12">

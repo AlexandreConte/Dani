@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import BusinessAssistantChat from "./BusinessAssistantChat";
 import NavigateUp from "./NavigateUp";
 import Navigation from "./Navigation";
@@ -7,8 +8,10 @@ interface FixedMenuProps {
   isTreatmentPage?: boolean;
 }
 
-export default function FixedMenu(props: FixedMenuProps) {
-  return props.isTreatmentPage ? (
+export default function FixedMenu() {
+  const router = useRouter();
+
+  return router.asPath.includes("/tratamentos") ? (
     <>
       <WhatsAppContact />
       <Navigation to="HOME" />

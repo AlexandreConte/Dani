@@ -3,7 +3,6 @@ import Page from "@/components/Shared/Page";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import FixedMenu from "@/components/FixedMenu";
 import clareamento from "@/../public/images/articles/clareamento/clareamento.webp"
 
 export default function Clareamento() {
@@ -17,7 +16,6 @@ export default function Clareamento() {
         keywords="clareamento dental, clareamento de dentes, dentes brancos, sorriso bonito, dentista"
       />
       <Page className="flex flex-col items-center">
-        <FixedMenu />
         <Header />
         <main className="flex flex-col items-center max-w-4xl">
           <div className="flex flex-col items-center mb-12">

@@ -3,7 +3,6 @@ import Page from "@/components/Shared/Page";
 import ArticlePreview from "@/components/ArticlePreview";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import FixedMenu from "@/components/FixedMenu";
 import zirconiaImg from "@/../public/images/articles/zirconia/zirconia-1.webp";
 import zirconiaTitanio from "@/../public/images/articles/zirconia-ou-titanio/zirconia_titanio.webp";
 import botox from "@/../public/images/articles/toxina-botulinica/botox.webp";
@@ -21,7 +20,6 @@ export default function Treatments() {
       />
       <Page className="flex flex-col items-center">
         <Header />
-        <FixedMenu isTreatmentPage />
         <main className="container px-4 flex flex-col items-center">
           <div className="flex flex-col items-center mb-12">
             <div className="bg-[#2D4F40] w-screen py-12">

@@ -6,7 +6,6 @@ import zirconia2 from "@/../public/images/articles/zirconia/zirconia-2.webp";
 import zirconiaResultado from "@/../public/images/articles/zirconia/resultado-zirconia.webp";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import FixedMenu from "@/components/FixedMenu";
 
 export default function Zirconia() {
   return (
@@ -19,7 +18,6 @@ export default function Zirconia() {
         keywords="implantes de zircônia, implante de zircônia, implante, dentista"
       />
       <Page className="flex flex-col items-center">
-        <FixedMenu />
         <Header />
         <main className="flex flex-col items-center mb-12">
           <div className="flex flex-col items-center max-w-4xl">

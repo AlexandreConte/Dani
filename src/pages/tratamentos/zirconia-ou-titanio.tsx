@@ -5,7 +5,6 @@ import zirconiaOuTitanio from "@/../public/images/articles/zirconia-ou-titanio/z
 import Area from "@/components/Shared/Area";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import FixedMenu from "@/components/FixedMenu";
 
 export default function ZirconiaOuTitanio() {
   return (
@@ -18,7 +17,6 @@ export default function ZirconiaOuTitanio() {
         keywords="implante, implante de zircônia, implante de titânio, dentista"
       />
       <Page className="flex flex-col items-center">
-        <FixedMenu />
         <Header />
         <Area>
           <main className="container mx-auto px-4 mb-12 max-w-4xl">

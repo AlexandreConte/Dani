@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import Image from "next/image";
 import denteQuebrado from "@/../public/images/articles/dente-quebrado/dente-quebrado.webp";
-import FixedMenu from "@/components/FixedMenu";
 
 export default function DenteQuebrado() {
   return (
@@ -17,7 +16,6 @@ export default function DenteQuebrado() {
         keywords="dente quebrado, fratura dental, tratamento dental, restauração dental, dentista"
       />
       <Page className="flex flex-col items-center">
-        <FixedMenu />
         <Header />
         <main className="flex flex-col items-center max-w-4xl">
           <div className="flex flex-col items-center mb-12">

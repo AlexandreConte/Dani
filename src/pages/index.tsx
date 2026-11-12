@@ -9,14 +9,12 @@ import Contact from '@/components/Contact'
 import Slogan from '@/components/Slogan'
 import Footer from '@/components/Footer'
 import SEO from '@/components/SEO'
-import FixedMenu from '@/components/FixedMenu'
 
 export default function Home() {
   return (
     <div>
       <SEO />
       <Page className='max-w-full overflow-x-hidden'>
-        <FixedMenu />
         <Header />
         <Slogan />
         <main className="bg">

@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import facetas from "@/../public/images/articles/facetas/facetas.webp";
 import facetasCeramicas from "@/../public/images/articles/facetas/facetas-ceramicas.webp";
 import SEO from "@/components/SEO";
-import FixedMenu from "@/components/FixedMenu";
 
 export default function Facetas() {
   return (
@@ -18,7 +17,6 @@ export default function Facetas() {
         keywords="facetas em cerâmica, faceta, lentes cerâmicas, lente cerâmica, faceta em resina composta, dentista"
       />
       <Page className="flex flex-col items-center">
-        <FixedMenu />
         <Header />
         <main className="flex flex-col items-center">
           <div className="flex flex-col items-center mb-12 max-w-4xl">
