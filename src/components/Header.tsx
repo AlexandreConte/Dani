@@ -42,7 +42,7 @@ export default function Header() {
         flex-col
         justify-center
         items-center
-        fixed top-0 left-0 z-50
+        fixed top-0 left-0 z-40
         h-[125px]
         backdrop-blur-lg
         shadow-lg

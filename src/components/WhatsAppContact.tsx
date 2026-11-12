@@ -10,7 +10,7 @@ export default function WhatsAppContact() {
       className="fixed bottom-4 right-4 z-10 w-[50px] h-[50px] p-[6px]
         flex-center rounded-full
         hover:scale-105 focus:scale-105 transition-all
-        bg-[#0CC142]
+        bg-[#0CC142] shadow-md border border-zinc-300
       "
     >
       <IconBrandWhatsapp size={35} color="white" />

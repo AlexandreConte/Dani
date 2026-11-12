@@ -7,7 +7,7 @@ interface NavigationProps {
 export default function Navigation(props: NavigationProps) {
   const className = `border border-zinc-300
       flex-center hover:scale-105 focus:scale-105 transition-all fixed bottom-20 right-4 w-[50px] h-[50px]
-      bg-white rounded-full z-50`;
+      bg-white rounded-full z-50 shadow-md`;
 
   return props.to === "TREATMENT" ? (
     <a href="/tratamentos" className={className}>

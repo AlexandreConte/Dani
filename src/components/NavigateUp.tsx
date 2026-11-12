@@ -29,10 +29,11 @@ export default function NavigateUp() {
     showScrollTop && (
       <div
         onClick={handleScrollToTop}
-        className="fixed bottom-36 right-4 z-10 w-[50px] h-[50px] p-[6px]
+        className="fixed bottom-52 right-4 z-10 w-[50px] h-[50px] p-[6px]
         flex-center rounded-full
         hover:scale-105 focus:scale-105 transition-all
         bg-[#fff] border border-zinc-300 cursor-pointer
+        shadow-md
       "
       >
         <IconChevronUp size={35} stroke={1.5} color="#000" />
